@@ -66,14 +66,17 @@ You may have to edit your profile in `$LIBIGL/Makefile.conf` appropriately.
 #### Mac OS X ####
 
     open skinning.xcodeproj
+
+You'll probably have to adjust the header search paths and library locations.
+Then you should be able to:
+
     Build and Run
 
 #### Windows ####
-Completely possible. Not supported.
-
+Completely possible. Not supported. Try your luck with the VS project.
 
 ## Usage ##
-To run the program issue
+To run the command line program issue
 
     ./skinning ogre/
 
