@@ -1,0 +1,17 @@
+﻿Build started 3/12/2012 1:09:54 PM.
+     1>Project "C:\depot\igl_repository\AutoDOF\Code\skinning\skinning_pc\skinning_pc\skinning_pc.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "x64\Release\skinning_pc.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+       Link:
+         All outputs are up-to-date.
+         skinning_pc.vcxproj -> C:\depot\igl_repository\AutoDOF\Code\skinning\skinning_pc\x64\Release\skinning_pc.exe
+       FinalizeBuildStatus:
+         Deleting file "x64\Release\skinning_pc.unsuccessfulbuild".
+         Touching "x64\Release\skinning_pc.lastbuildstate".
+     1>Done Building Project "C:\depot\igl_repository\AutoDOF\Code\skinning\skinning_pc\skinning_pc\skinning_pc.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.05

@@ -1,0 +1,83 @@
+Draw bar: TW_TYPE_BOOLCPP 1
+AlwaysClear: TW_TYPE_BOOLCPP 1
+time_clear_color: TW_TYPE_BOOLCPP 0
+Background: TW_TYPE_COLOR3F 1 1 1
+Ambient: TW_TYPE_COLOR3F 0.2 0.168627 0.130588
+Diffuse: TW_TYPE_COLOR3F 1 0.894118 0.227451
+Specular: TW_TYPE_COLOR3F 1 0.921569 0.313726
+Shininess: TW_TYPE_FLOAT 128
+show_faces: TW_TYPE_BOOLCPP 1
+show_lines: TW_TYPE_BOOLCPP 0
+reverse_depth_offsets: TW_TYPE_BOOLCPP 1
+Multiplier: TW_TYPE_FLOAT 1
+2Multiplier: TW_TYPE_FLOAT 1
+LightDir: TW_TYPE_DIR3F -0.1 -0.1 -1
+Light2Dir: TW_TYPE_DIR3F 1 0 0
+Rot: TW_TYPE_QUAT4D -1.061e-314 -0.0078125 0 1
+SpinPeriod: TW_TYPE_DOUBLE 10
+TrackBallSpeedFactor: TW_TYPE_DOUBLE 2
+SnapThreshold: TW_TYPE_DOUBLE 0
+ZoomLock: TW_TYPE_BOOLCPP 0
+pan_x: TW_TYPE_DOUBLE 0
+pan_y: TW_TYPE_DOUBLE -0.11
+pan_z: TW_TYPE_DOUBLE 0
+AngleLock: TW_TYPE_BOOLCPP 0
+Shader: ShaderMode LBS
+selected_weight: TW_TYPE_INT32 6
+draw_bones: TW_TYPE_BOOLCPP 1
+bones_on_top: TW_TYPE_BOOLCPP 1
+draw_bones_according_to_T: TW_TYPE_BOOLCPP 1
+draw_connected_skeleton: TW_TYPE_BOOLCPP 0
+average_children_tails_to_draw_non_weighted_roots: TW_TYPE_BOOLCPP 1
+display_floor: TW_TYPE_BOOLCPP 1
+floor depth: TW_TYPE_FLOAT 0
+render_once: TW_TYPE_BOOLCPP 0
+cheat_x: TW_TYPE_DOUBLE 0
+lock_mouse_new: TW_TYPE_BOOLCPP 0
+view_vector: ViewVector View
+auto_dof_energy: ArapEnergy Elements
+num_groups: TW_TYPE_INT32 0
+Extra weights type: ExtraWeight iso
+Ease filter: Ease Cubic B-spline
+push: TW_TYPE_DOUBLE 2
+num_abrupt_weight_space: TW_TYPE_INT32 0
+num_extra_weights: TW_TYPE_INT32 0
+sort_weights_epsilon_power: TW_TYPE_INT32 -1
+max_iters: TW_TYPE_INT32 100
+tol: TW_TYPE_DOUBLE 0
+print_timings: TW_TYPE_BOOLCPP 0
+seconds_per_update: TW_TYPE_DOUBLE 10
+grav_dir: TW_TYPE_DIR3D 0 -1 0
+grav_mag: TW_TYPE_DOUBLE 0
+dampening: TW_TYPE_DOUBLE 1
+animation_interp_secs: TW_TYPE_DOUBLE 0.5
+Transition: TransitionType Abrupt Out
+render_animation_to_tga: TW_TYPE_BOOLCPP 0
+display_crowd: TW_TYPE_BOOLCPP 0
+crowd_x: TW_TYPE_INT32 10
+crowd_y: TW_TYPE_INT32 10
+crowd_x_off: TW_TYPE_FLOAT 1
+crowd_y_off: TW_TYPE_FLOAT 1
+reverse_lead: TW_TYPE_BOOLCPP 0
+lead_armadillo_distance: TW_TYPE_FLOAT 0
+play_animation: TW_TYPE_BOOLCPP 1
+lead_color: TW_TYPE_COLOR3F 1 0.490196 0.0745098
+crowd_color0: TW_TYPE_COLOR3F 1 0.894118 0.227451
+crowd_color1: TW_TYPE_COLOR3F 1 0.894118 0.227451
+crowd_color2: TW_TYPE_COLOR3F 1 0.894118 0.227451
+crowd_color3: TW_TYPE_COLOR3F 1 0.894118 0.227451
+NumVertices: TW_TYPE_INT32 28837
+NumFaces: TW_TYPE_INT32 52306
+normal_type: NormalType vertex
+corner_threshold: TW_TYPE_DOUBLE 20
+use_texture_mapping: TW_TYPE_BOOLCPP 0
+SpinUp: TW_TYPE_BOOLCPP 0
+Zoom: TW_TYPE_DOUBLE 0.729938
+angle: TW_TYPE_DOUBLE 45
+color_option: ColorOption Regions
+edit_bones: TW_TYPE_BOOLCPP 0
+dial_in_each_T: TW_TYPE_BOOLCPP 0
+with_dynamics: TW_TYPE_BOOLCPP 0
+h: TW_TYPE_DOUBLE 5
+animation_size: TW_TYPE_INT32 0
+

@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8855B0D4-2F3C-4010-8AB3-5F4247695300}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>skinning_pc</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseIntelMKL>Sequential</UseIntelMKL>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseIntelMKL>Sequential</UseIntelMKL>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Users\ajx\Documents\include\eigen3\unsupported;C:\Users\ajx\Documents\include\eigen3;C:\Users\ajx\Documents\igl_lib;C:\Users\ajx\Documents\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>c:\prg\lib\eigen-eigen-3.0.3\;c:\depot\igl_repository\igl_lib\include;c:\prg\lib\AntTweakBar\include;$(IncludePath);c:\prg\lib\glew-1.7.0\include\;c:\prg\lib\freeglut-2.6.0\include;c:\prg\lib\eigen-eigen-3.0.3\unsupported;c:\Program Files\MATLAB\R2011a\extern\include</IncludePath>
+    <LibraryPath>..\libx64\Debug;$(LibraryPath);c:\Program Files\MATLAB\R2011a\extern\lib\win64\microsoft\</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\Users\ajx\Documents\include\eigen3\unsupported;C:\Users\ajx\Documents\include\eigen3;C:\Users\ajx\Documents\igl_lib;C:\Users\ajx\Documents\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>c:\prg\lib\eigen-eigen-3.0.3\;c:\depot\igl_repository\igl_lib\include;c:\prg\lib\AntTweakBar\include;$(IncludePath);c:\prg\lib\glew-1.7.0\include\;c:\prg\lib\freeglut-2.6.0\include;c:\prg\lib\eigen-eigen-3.0.3\unsupported;c:\Program Files\MATLAB\R2011a\extern\include</IncludePath>
+    <LibraryPath>..\libx64\Release;$(LibraryPath);c:\Program Files\MATLAB\R2011a\extern\lib\win64\microsoft\</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <AdditionalOptions>/D "IGL_HEADER_ONLY" %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+      <AdditionalDependencies>freeglut.lib;glew32d.lib;AntTweakBar64.lib;libeng.lib;libmx.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_RELEASE;WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <AdditionalDependencies>freeglut.lib;glew32.lib;AntTweakBar64.lib;libeng.lib;libmx.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\igl_lib\min_quad_dense.h" />
+    <ClInclude Include="..\..\skinning\arap_dof.h" />
+    <ClInclude Include="..\..\skinning\arap_rhs.h" />
+    <ClInclude Include="..\..\skinning\BasicOpenGLView.h" />
+    <ClInclude Include="..\..\skinning\Bone.h" />
+    <ClInclude Include="..\..\skinning\BoneBoneCopyMap.h" />
+    <ClInclude Include="..\..\skinning\columnize.h" />
+    <ClInclude Include="..\..\skinning\covariance_scatter_matrix.h" />
+    <ClInclude Include="..\..\skinning\CTGALoader.h" />
+    <ClInclude Include="..\..\skinning\DegreeOfFreedomType.h" />
+    <ClInclude Include="..\..\skinning\discrete_iso_extra.h" />
+    <ClInclude Include="..\..\skinning\draw_directed_line_segment.h" />
+    <ClInclude Include="..\..\skinning\draw_mesh.h" />
+    <ClInclude Include="..\..\skinning\draw_point.h" />
+    <ClInclude Include="..\..\skinning\draw_vbo_mesh.h" />
+    <ClInclude Include="..\..\skinning\eigen_glUniformMatrixXfv.h" />
+    <ClInclude Include="..\..\skinning\fit_rotations.h" />
+    <ClInclude Include="..\..\skinning\gather_bones.h" />
+    <ClInclude Include="..\..\skinning\gather_displacements.h" />
+    <ClInclude Include="..\..\skinning\gather_fixed.h" />
+    <ClInclude Include="..\..\skinning\gather_free.h" />
+    <ClInclude Include="..\..\skinning\gather_rest_positions.h" />
+    <ClInclude Include="..\..\skinning\gather_transformations.h" />
+    <ClInclude Include="..\..\skinning\group_sum_matrix.h" />
+    <ClInclude Include="..\..\skinning\inside_point.h" />
+    <ClInclude Include="..\..\skinning\intersection.h" />
+    <ClInclude Include="..\..\skinning\lbs_matrix.h" />
+    <ClInclude Include="..\..\skinning\main.h" />
+    <ClInclude Include="..\..\skinning\malloc.h" />
+    <ClInclude Include="..\..\skinning\max_weight_index.h" />
+    <ClInclude Include="..\..\skinning\MKLEigenInterface.h" />
+    <ClInclude Include="..\..\skinning\MT19937.H" />
+    <ClInclude Include="..\..\skinning\optimize_index_buffer.h" />
+    <ClInclude Include="..\..\skinning\partition.h" />
+    <ClInclude Include="..\..\skinning\polar_dec.h" />
+    <ClInclude Include="..\..\skinning\polar_svd.h" />
+    <ClInclude Include="..\..\skinning\pseudocolors_from_weights.h" />
+    <ClInclude Include="..\..\skinning\Quat.h" />
+    <ClInclude Include="..\..\skinning\read_BF.h" />
+    <ClInclude Include="..\..\skinning\ShaderMode.h" />
+    <ClInclude Include="..\..\skinning\Singular_Value_Decomposition_Givens_QR_Factorization_Kernel.hpp" />
+    <ClInclude Include="..\..\skinning\Singular_Value_Decomposition_Jacobi_Conjugation_Kernel.hpp" />
+    <ClInclude Include="..\..\skinning\Singular_Value_Decomposition_Kernel_Declarations.hpp" />
+    <ClInclude Include="..\..\skinning\Singular_Value_Decomposition_Main_Kernel_Body.hpp" />
+    <ClInclude Include="..\..\skinning\Singular_Value_Decomposition_Preamble.hpp" />
+    <ClInclude Include="..\..\skinning\Skinning.h" />
+    <ClInclude Include="..\..\skinning\skinningAppDelegate.h" />
+    <ClInclude Include="..\..\skinning\SkinningCallback.h" />
+    <ClInclude Include="..\..\skinning\Tform.h" />
+    <ClInclude Include="..\..\skinning\tga.h" />
+    <ClInclude Include="..\..\skinning\uncolumnize.h" />
+    <ClInclude Include="..\..\skinning\uniform_sample.h" />
+    <ClInclude Include="..\..\skinning\Vec.h" />
+    <ClInclude Include="..\..\skinning\view_axis.h" />
+    <ClInclude Include="..\..\skinning\Widget.h" />
+    <ClInclude Include="..\..\skinning\write_BF.h" />
+    <ClInclude Include="..\..\skinning\WunderSVD3x3.h" />
+    <ClInclude Include="..\..\skinning\WunderSVD3x3_AVX.h" />
+    <ClInclude Include="..\..\skinning\WunderSVD3x3_SSE.h" />
+    <ClInclude Include="..\..\skinning\wunder_polar_svd.h" />
+    <ClInclude Include="discrete_iso_extra.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\skinning\arap_dof.cpp" />
+    <ClCompile Include="..\..\skinning\arap_linear_block.cpp" />
+    <ClCompile Include="..\..\skinning\Bone.cpp" />
+    <ClCompile Include="..\..\skinning\BoneBoneCopyMap.cpp" />
+    <ClCompile Include="..\..\skinning\draw_floor.cpp" />
+    <ClCompile Include="..\..\skinning\main.cpp" />
+    <ClCompile Include="..\..\skinning\malloc.c" />
+    <ClCompile Include="..\..\skinning\MT19937F.cpp" />
+    <ClCompile Include="..\..\skinning\newdel.cpp" />
+    <ClCompile Include="..\..\skinning\optimize_index_buffer.cpp" />
+    <ClCompile Include="..\..\skinning\Skinning.cpp" />
+    <ClCompile Include="..\..\skinning\SkinningCallback.cpp" />
+    <ClCompile Include="..\..\skinning\uniform_sample.cpp" />
+    <ClCompile Include="..\..\skinning\WunderSVD3x3.cpp">
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">StackFrameRuntimeCheck</BasicRuntimeChecks>
+    </ClCompile>
+    <ClCompile Include="..\..\skinning\WunderSVD3x3_AVX.cpp">
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">StackFrameRuntimeCheck</BasicRuntimeChecks>
+    </ClCompile>
+    <ClCompile Include="..\..\skinning\WunderSVD3x3_SSE.cpp">
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">StackFrameRuntimeCheck</BasicRuntimeChecks>
+    </ClCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

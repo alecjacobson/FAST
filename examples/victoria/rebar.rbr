@@ -1,0 +1,55 @@
+Draw bar: TW_TYPE_BOOLCPP 1
+AlwaysClear: TW_TYPE_BOOLCPP 1
+time_clear_color: TW_TYPE_BOOLCPP 0
+Background: TW_TYPE_COLOR3F 1 1 1
+Ambient: TW_TYPE_COLOR3F 0.2 0.168627 0.130588
+Diffuse: TW_TYPE_COLOR3F 1 0.894118 0.227451
+Specular: TW_TYPE_COLOR3F 1 0.921569 0.313726
+Shininess: TW_TYPE_FLOAT 128
+show_faces: TW_TYPE_BOOLCPP 1
+show_lines: TW_TYPE_BOOLCPP 0
+Multiplier: TW_TYPE_FLOAT 1
+LightDir: TW_TYPE_DIR3F 0.267676 -0.331897 -0.91553
+Rot: TW_TYPE_QUAT4F -0.0501646 0.00698715 -0.00862481 0.998679
+SpinPeriod: TW_TYPE_DOUBLE 10
+TrackBallSpeedFactor: TW_TYPE_DOUBLE 2
+SnapThreshold: TW_TYPE_DOUBLE 0
+ZoomLock: TW_TYPE_BOOLCPP 0
+pan_x: TW_TYPE_DOUBLE 0
+pan_y: TW_TYPE_DOUBLE 0
+pan_z: TW_TYPE_DOUBLE 0
+AngleLock: TW_TYPE_BOOLCPP 0
+use_display_list: TW_TYPE_BOOLCPP 1
+Shader: ShaderMode LBS
+selected_weight: TW_TYPE_INT32 18
+draw_bones: TW_TYPE_BOOLCPP 1
+auto_dof_energy: ArapEnergy Spokes and rims
+number_of_groups: TW_TYPE_INT32 34
+Extra weights type: ExtraWeight iso
+Ease filter: Ease Cubic B-spline
+push: TW_TYPE_DOUBLE 2
+num_abrupt_weight_space: TW_TYPE_INT32 0
+number_of_extra_weights: TW_TYPE_INT32 0
+sort_weights_epsilon_power: TW_TYPE_INT32 -1
+max_iters: TW_TYPE_INT32 100
+tol: TW_TYPE_DOUBLE 0
+print_timings: TW_TYPE_BOOLCPP 0
+animation_interp_secs: TW_TYPE_DOUBLE 0.5
+Transition: TransitionType Ease
+NumVertices: TW_TYPE_INT32 45659
+NumFaces: TW_TYPE_INT32 91314
+use_corner_normals: TW_TYPE_BOOLCPP 0
+corner_threshold: TW_TYPE_DOUBLE 20
+use_texture_mapping: TW_TYPE_BOOLCPP 0
+SpinUp: TW_TYPE_BOOLCPP 0
+Zoom: TW_TYPE_DOUBLE 0.376853
+angle: TW_TYPE_DOUBLE 45
+color_option: ColorOption Match diffuse
+draw_bones_according_to_T: TW_TYPE_BOOLCPP 1
+draw_connected_skeleton: TW_TYPE_BOOLCPP 0
+average_children_tails_to_draw_non_weighted_roots: TW_TYPE_BOOLCPP 1
+dial_in_each_T: TW_TYPE_BOOLCPP 0
+view_vector: ViewVector View
+auto_dof: TW_TYPE_BOOLCPP 0
+animation_size: TW_TYPE_INT32 0
+
