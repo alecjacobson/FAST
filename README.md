@@ -8,6 +8,13 @@ the demo code for the SIGGRAPH paper "Fast Automatic Skinning Transformations"
 by Jacobson et al. 2013. To jump to the relevant code for that paper, see
 `igl/arap_dof.h` in [libigl](https://github.com/libigl/libigl/)
 
+### Note about name ###
+The previous name of the project files was "skinning". Since this program is
+really a prototype program for "Fast Automatic Skinning Transformations", this
+old name was a bit too general. Nevertheless some of the files and projects
+keep this name as a legacy to avoid the ugly refactoring required when
+renaming.
+
 ### Dependencies ###
 - Eigen3 (matrix library)
 - libigl (IGL's header library)
