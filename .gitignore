@@ -1,3 +1,14 @@
+# use glob syntax.
+syntax: glob
+scripts/change_name.sh
+*.so
+*.so.[0123456789]
+*.so.[0123456789].[0123456789]
+*.o
+*.a
+*.dylib
+*~
+.DS_Store
 # Compiled Object files
 *.slo
 *.lo
@@ -26,3 +37,4 @@
 *.exe
 *.out
 *.app
+skinning/skinning
