@@ -8,9 +8,7 @@
 #define EIGEN_YES_I_KNOW_SPARSE_MODULE_IS_NOT_STABLE_YET
 #include <Eigen/Dense>
 #include <Eigen/Sparse>
-// Bug in unsupported/Eigen/SparseExtra needs iostream first
 #include <iostream>
-#include <unsupported/Eigen/SparseExtra>
 
 // Gather positional constraints system entries implied by bone forest
 //

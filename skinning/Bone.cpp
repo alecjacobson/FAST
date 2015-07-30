@@ -3,12 +3,12 @@
 #include <iostream>
 #include <igl/verbose.h>
 #include <igl/PI.h>
-#include <igl/project.h>
-#include <igl/unproject.h>
-#include <igl/draw_point.h>
-#include <igl/view_axis.h>
-#include <igl/up_axis.h>
-#include <igl/right_axis.h>
+#include <igl/opengl2/project.h>
+#include <igl/opengl2/unproject.h>
+#include <igl/opengl2/draw_point.h>
+#include <igl/opengl2/view_axis.h>
+#include <igl/opengl2/up_axis.h>
+#include <igl/opengl2/right_axis.h>
 
 #include "Bone.h"
 #include "Skeleton.h"
@@ -28,6 +28,7 @@
 
 using namespace std;
 using namespace igl;
+using namespace igl::opengl2;
 
 static double POINT_COLOR[3] = {239./255.,213./255.,46./255.};
 static double FREE_POINT_COLOR[3] = {113./255.,239./255.,46./255.};
@@ -519,7 +520,7 @@ void Bone::draw()
     pcolor[1] = 0.8*(1.0-0.2*(1.0-pcolor[1]))+0.2*0.5;
     pcolor[2] = 0.8*(1.0-0.2*(1.0-pcolor[2]))+0.2*0.5;
     glColor3d(pcolor[0],pcolor[1],pcolor[2]);
-    igl::draw_point(s[0],s[1],s[2],BONE_POINT_RADIUS,false);
+    igl::opengl2::draw_point(s[0],s[1],s[2],BONE_POINT_RADIUS,false);
     // Draw parent's tip again to make sure it shows up on top
     this->parent->draw_tip();
   }
@@ -543,7 +544,7 @@ void Bone::draw_tip() const
     double pcolor[3];
     tip_color(pcolor);
     glColor3d(pcolor[0],pcolor[1],pcolor[2]);
-    igl::draw_point(d[0],d[1],d[2],BONE_POINT_RADIUS,is_tip_selected);
+    igl::opengl2::draw_point(d[0],d[1],d[2],BONE_POINT_RADIUS,is_tip_selected);
   }
 }
 

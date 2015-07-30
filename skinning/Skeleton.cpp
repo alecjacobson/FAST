@@ -2,7 +2,7 @@
 #include "gather_bones.h"
 
 // IGL
-#include <igl/unproject_to_zero_plane.h>
+#include <igl/opengl2/unproject_to_zero_plane.h>
 
 // OpenGL related
 #ifdef __APPLE__
@@ -89,7 +89,7 @@ bool Skeleton<BoneType>::down(
     }else
     {
       Vec3 off;
-      unproject_to_zero_plane(x,y, &off[0], &off[1], &off[2]);
+      igl::opengl2::unproject_to_zero_plane(x,y, &off[0], &off[1], &off[2]);
       // Add as root
       using namespace std;
       cout<<"Adding new bone"<<endl;

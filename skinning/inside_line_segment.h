@@ -25,7 +25,7 @@ inline bool inside_line_segment(
   double s_r);
 
 // Implementation
-#include <igl/project.h>
+#include <igl/opengl2/project.h>
 #include <igl/point_in_circle.h>
 #include <igl/project_to_line.h>
 
@@ -42,9 +42,9 @@ inline bool inside_line_segment(
 {
   // Get screen position of (sx,sy,sz) and (dx,dy,dz)
   double s_sx, s_sy, s_sz;
-  igl::project(sx,sy,sz,&s_sx,&s_sy,&s_sz);
+  igl::opengl2::project(sx,sy,sz,&s_sx,&s_sy,&s_sz);
   double s_dx, s_dy, s_dz;
-  igl::project(dx,dy,dz,&s_dx,&s_dy,&s_dz);
+  igl::opengl2::project(dx,dy,dz,&s_dx,&s_dy,&s_dz);
   // Test if (s_qx, s_y) is in circle with radius s_r, centered
   // at (s_x,s_y,s_z)
   if(igl::point_in_circle(s_qx,s_qy,s_sx,s_sy,s_r)) return true;

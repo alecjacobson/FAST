@@ -1,4 +1,5 @@
 #include <Eigen/Core>
+#include <igl/opengl/report_gl_error.h>
 #if __APPLE__
 #  include <OpenGL/gl.h>
 #else
@@ -58,7 +59,7 @@ bool eigen_glUniformMatrixXfv(
       FALSE_NEVER_USE_TRANSPOSE_WITH_NON_SQUARE_MATRICES,
       T.data());
   }
-  GLenum err = igl::report_gl_error("transformations(T): ");
+  GLenum err = igl::opengl::report_gl_error("transformations(T): ");
   if(err != GL_NO_ERROR)
   {
     return false;
@@ -177,7 +178,7 @@ bool eigen_glUniformMatrixXfv(
       FALSE_NEVER_USE_TRANSPOSE_WITH_NON_SQUARE_MATRICES,
       T.data());
   }
-  GLenum err = igl::report_gl_error("transformations(T): ");
+  GLenum err = igl::opengl::report_gl_error("transformations(T): ");
   if(err != GL_NO_ERROR)
   {
     return false;

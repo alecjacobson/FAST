@@ -1,5 +1,4 @@
 #include "draw_water.h"
-#include <igl/draw_floor.h>
 
 #ifdef __APPLE__
 #  include <OpenGL/gl.h>

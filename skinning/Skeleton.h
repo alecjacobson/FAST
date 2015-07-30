@@ -2,7 +2,7 @@
 #define SKELETON_H
 
 #include <vector>
-#include <tr1/functional>
+#include <functional>
  
 // A Skeleton object is simple a collection of forests of "Bone" classes. Each
 // tree designated by its respective root
@@ -33,7 +33,7 @@ class Skeleton : public Widget
     // Type definition for a callback that will receive a const reference to
     // this skeleton as input and returns a void pointer
     // Method 
-    typedef std::tr1::function<void (const Skeleton<BoneType> &)> SkeletonCallback;
+    typedef std::function<void (const Skeleton<BoneType> &)> SkeletonCallback;
     // Callback called after setting editing field
     SkeletonCallback after_set_editing;
     bool draw_drag_rotations;

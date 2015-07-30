@@ -7,7 +7,10 @@
 // Forward declaration of ReAntTweakBar, wrapper for UI library AntTweakBar
 namespace igl
 {
-  class ReTwBar;
+  namespace anttweakbar
+  {
+    class ReTwBar;
+  }
 }
 
 #ifndef NO_PUPPET
@@ -48,7 +51,7 @@ typedef Eigen::MatrixXd LbsMatrixType;
 #  include <GL/glext.h>
 #endif
 
-#include <igl/svd3x3/arap_dof.h>
+#include <igl/arap_dof.h>
 
 #include "Skeleton.h"
 //template <typename BoneType>
@@ -292,7 +295,7 @@ class Skinning
     // UI fields
     /////////////////////////////////////////////////////////////////////////
     // UI object, wraps AntTweakBar library
-    igl::ReTwBar * rebar;
+    igl::anttweakbar::ReTwBar * rebar;
     // Whether to draw anttweakbar
     bool draw_anttweakbar;
     // Controls how fast the trackball feels, 1 is normal

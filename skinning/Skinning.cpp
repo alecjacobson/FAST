@@ -43,10 +43,10 @@ using namespace SkinningCallback;
 // IGL library (all in 'igl' namespace)
 // IGL functions
 #include <igl/axis_angle_to_quat.h>
-#include <igl/cocoa_key_to_anttweakbar_key.h>
-#include <igl/create_shader_program.h>
-#include <igl/destroy_shader_program.h>
-#include <igl/draw_mesh.h>
+#include <igl/anttweakbar/cocoa_key_to_anttweakbar_key.h>
+#include <igl/opengl/create_shader_program.h>
+#include <igl/opengl/destroy_shader_program.h>
+#include <igl/opengl2/draw_mesh.h>
 #include <igl/file_contents_as_string.h>
 #include <igl/get_seconds.h>
 #include <igl/get_seconds_hires.h>
@@ -60,9 +60,9 @@ using namespace SkinningCallback;
 #include <igl/per_corner_normals.h>
 #include <igl/per_face_normals.h>
 #include <igl/per_vertex_normals.h>
-#include <igl/print_gl_get.h>
+#include <igl/opengl2/print_gl_get.h>
 #include <igl/print_ijv.h>
-#include <igl/project.h>
+#include <igl/opengl2/project.h>
 #include <igl/quat_conjugate.h>
 #include <igl/quat_mult.h>
 #include <igl/quat_to_mat.h>
@@ -70,18 +70,18 @@ using namespace SkinningCallback;
 #include <igl/readMESH.h>
 #include <igl/readOBJ.h>
 #include <igl/readOFF.h>
-#include <igl/render_to_tga.h>
+#include <igl/opengl/render_to_tga.h>
 #include <igl/repmat.h>
-#include <igl/report_gl_error.h>
+#include <igl/opengl/report_gl_error.h>
 #include <igl/rotate_by_quat.h>
 #include <igl/slice.h>
 #include <igl/slice_into.h>
 #include <igl/sort.h>
-#include <igl/texture_from_tga.h>
+#include <igl/opengl/texture_from_tga.h>
 #include <igl/trackball.h>
 #include <igl/transpose_blocks.h>
-#include <igl/unproject.h>
-#include <igl/unproject_to_zero_plane.h>
+#include <igl/opengl2/unproject.h>
+#include <igl/opengl2/unproject_to_zero_plane.h>
 #include <igl/verbose.h>
 #include <igl/writeDMAT.h>
 #include <igl/writeMESH.h>
@@ -95,9 +95,9 @@ using namespace SkinningCallback;
 #include <igl/material_colors.h>
 #include <igl/canonical_quaternions.h>
 #include <igl/snap_to_canonical_view_quat.h>
-#include <igl/draw_floor.h>
+#include <igl/opengl2/draw_floor.h>
 // IGL classes
-#include <igl/ReAntTweakBar.h>
+#include <igl/anttweakbar/ReAntTweakBar.h>
 
 // Use eigen for mesh data and weights for example as well as matrix
 // computation
@@ -152,6 +152,9 @@ using namespace SkinningCallback;
 using namespace std;
 // All singleton header files will be using igl namespace
 using namespace igl;
+using namespace igl::anttweakbar;
+using namespace igl::opengl2;
+using namespace igl::opengl;
 using namespace Eigen;
 
 /////////////////////////////////////////////////////////////////////////////
@@ -513,10 +516,10 @@ void Skinning::initialize_skeleton()
   skel = new Skeleton<Bone>();
   // Register callback
   skel->after_set_editing =
-    tr1::bind(
+    std::bind(
       &Skinning::after_skeleton_set_editing, 
       this,
-      tr1::placeholders::_1);
+      std::placeholders::_1);
 }
 
 void Skinning::initialize_display()
@@ -585,6 +588,7 @@ void Skinning::initialize_display()
 
 void Skinning::initialize_anttweakbar()
 {
+  using namespace igl::anttweakbar;
   draw_anttweakbar = true;
   // Initialize anttweakbar library
   TwInit(TW_OPENGL, NULL);
@@ -679,6 +683,7 @@ void Skinning::add_bone_editor_group()
 
 void Skinning::add_transformation_editor_group()
 {
+  using namespace igl::anttweakbar;
   rebar->TwAddVarCB("sb_wi",TW_TYPE_INT32,
       no_op,
       get_selected_bone_wi,
@@ -1564,10 +1569,10 @@ for (int i=0; i<numReps; i++)
     if(TF.size() > 0 || NF.size() > 0)
     {
       cout<<"TC = ["<<TC<<"];"<<endl;
-      igl::draw_mesh(*pV,F,*pN,*pNF,*pC,*pTC,TF,W,W_index, WI,WI_index);
+      igl::opengl2::draw_mesh(*pV,F,*pN,*pNF,*pC,*pTC,TF,W,W_index, WI,WI_index);
     }else
     {
-      igl::draw_mesh(*pV,F,*pN,*pC,*pTC,W,W_index, WI,WI_index);
+      igl::opengl2::draw_mesh(*pV,F,*pN,*pC,*pTC,W,W_index, WI,WI_index);
     }
     if(use_texture_mapping)
     {
@@ -2100,6 +2105,7 @@ bool Skinning::key_down(int key,
   bool control_down,
   bool meta_down)
 {
+  using namespace igl::anttweakbar;
   int tw_mod = 
     build_anttweakbar_modifier(shift_down,control_down,meta_down);
   // Let AntTweakBar know where the mouse is
@@ -2413,7 +2419,7 @@ bool Skinning::load_mesh_from_file(const std::string mesh_file_name)
   if(extension == "obj")
   {
     Tets.resize(0,0);
-    success = readOBJ(mesh_file_name, V, F, CN, NF, TC, TF);
+    success = readOBJ(mesh_file_name,V,TC,CN,F,TF,NF);
     //std::cout<<"CN = ["<<CN<<"];"<<endl;
   }else if(extension == "off")
   {
@@ -2904,7 +2910,7 @@ bool Skinning::load_shader_pair_from_files(
   }
 
   bool creation_success = 
-    create_shader_program(
+    igl::opengl::create_shader_program(
       vert_source,
       frag_source,
       shader_attribs[idx],

@@ -20,9 +20,9 @@ inline bool inside_point(
 
 // Implementation
 
-#include <igl/project.h>
 #include <igl/point_in_circle.h>
-#include <igl/report_gl_error.h>
+#include <igl/opengl2/project.h>
+#include <igl/opengl/report_gl_error.h>
 inline bool inside_point(
   const double s_qx,
   const double s_qy,
@@ -31,10 +31,13 @@ inline bool inside_point(
   const double z,
   double s_r)
 {
+  using namespace igl::opengl2;
+  using namespace igl::opengl;
+  using namespace igl;
   // Get screen position of (x,y,z)
   double s_x, s_y, s_z;
-  igl::project(x,y,z,&s_x,&s_y,&s_z);
-  igl::report_gl_error();
+  igl::opengl2::project(x,y,z,&s_x,&s_y,&s_z);
+  igl::opengl::report_gl_error();
 
 //#ifdef EXTREME_VERBOSE
 //  verbose("project(%g,%g,%g) --> %g %g %g\n",x,y,z,s_x,s_y,s_z);
