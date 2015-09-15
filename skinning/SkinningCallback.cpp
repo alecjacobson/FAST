@@ -848,7 +848,7 @@ void TW_CALL SkinningCallback::compute_weights(void * clientData)
   MatrixXi BF;
   cout<<"tetgen begin()"<<endl;
   int status = 
-    tetrahedralize(
+    igl::tetgen::tetrahedralize(
       VS,skinning->F,"Ypq100",skinning->V,skinning->Tets,BF);
   cout<<"tetgen end()"<<endl;
   if(BF.rows() != skinning->F.rows())
@@ -870,7 +870,7 @@ void TW_CALL SkinningCallback::compute_weights(void * clientData)
         "************************************************************\n"
         ,__FUNCTION__);
     status =
-      tetrahedralize(
+      igl::tetgen::tetrahedralize(
         VS,skinning->F,"q1.414",skinning->V,skinning->Tets,BF);
     assert(skinning->F.maxCoeff() < skinning->V.rows());
     if(status != 0)
@@ -889,10 +889,10 @@ void TW_CALL SkinningCallback::compute_weights(void * clientData)
   MatrixXd bc;
   boundary_conditions(skinning->V,skinning->Tets,skinning->skel->roots,b,bc);
 
-  // call BBW 
-  BBWData bbw_data;
+  //    call BBW 
+  igl::bbw::BBWData bbw_data;
   bbw_data.active_set_params.max_iter = 10;
-  success = bbw(
+  success = igl::bbw::bbw(
     skinning->V,
     skinning->Tets,
     b,
