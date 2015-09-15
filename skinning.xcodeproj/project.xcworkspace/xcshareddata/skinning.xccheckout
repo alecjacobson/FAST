@@ -10,36 +10,31 @@
 	<string>skinning</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>526b7f45-2a90-4319-856e-49ab404836db++5634</key>
-		<string>https://svn.inf.ethz.ch/svn/sorkine/igl_repository/trunk/AutoDOF</string>
+		<key>219BE2F9437CD078C1B13C967D1CCFDF4FA02F65</key>
+		<string>github.com:alecjacobson/FAST.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Code/skinning/skinning.xcodeproj</string>
+	<string>skinning.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>526b7f45-2a90-4319-856e-49ab404836db++5634</key>
-		<string>../../../..</string>
-	</dict>
-	<key>IDESourceControlProjectRepositoryRootDictionary</key>
-	<dict>
-		<key>526b7f45-2a90-4319-856e-49ab404836db++5634</key>
-		<string>https://svn.inf.ethz.ch/svn/sorkine/igl_repository</string>
+		<key>219BE2F9437CD078C1B13C967D1CCFDF4FA02F65</key>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://svn.inf.ethz.ch/svn/sorkine/igl_repository/trunk/AutoDOF/Code/skinning/skinning.xcodeproj</string>
+	<string>github.com:alecjacobson/FAST.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>526b7f45-2a90-4319-856e-49ab404836db++5634</string>
+	<string>219BE2F9437CD078C1B13C967D1CCFDF4FA02F65</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
-			<string>public.vcs.subversion</string>
+			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>526b7f45-2a90-4319-856e-49ab404836db++5634</string>
+			<string>219BE2F9437CD078C1B13C967D1CCFDF4FA02F65</string>
 			<key>IDESourceControlWCCName</key>
-			<string>AutoDOF</string>
+			<string>FAST</string>
 		</dict>
 	</array>
 </dict>

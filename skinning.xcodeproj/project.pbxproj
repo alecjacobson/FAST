@@ -29,7 +29,6 @@
 		7D45CACD1518E0F000FD6043 /* Skeleton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7D45CACC1518E0F000FD6043 /* Skeleton.cpp */; };
 		7D4ABE8416815B35003EFCE2 /* draw_water.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7D4ABE8016815B35003EFCE2 /* draw_water.cpp */; };
 		7D4ABE8516815B35003EFCE2 /* spheres_collide_with_floor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7D4ABE8216815B35003EFCE2 /* spheres_collide_with_floor.cpp */; };
-		7D52449B168072A300956332 /* libgomp.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D52449A168072A300956332 /* libgomp.1.dylib */; };
 		7D58BB9B172FEC2100F1329B /* calistatics.icns in Resources */ = {isa = PBXBuildFile; fileRef = 7D58BB9A172FEC2100F1329B /* calistatics.icns */; };
 		7D5E1FBB166F5AEC00920617 /* directionalperpixel.frag in Resources */ = {isa = PBXBuildFile; fileRef = 7D5E1FAB166F5AEC00920617 /* directionalperpixel.frag */; };
 		7D5E1FBC166F5AEC00920617 /* directionalperpixel.vert in Resources */ = {isa = PBXBuildFile; fileRef = 7D5E1FAC166F5AEC00920617 /* directionalperpixel.vert */; };
@@ -51,7 +50,6 @@
 		7D7FC7811420FC4100CEA85D /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D7FC7801420FC4100CEA85D /* GLUT.framework */; };
 		7D8C3F6414A3D2C700F096AC /* BoneBoneCopyMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7D8C3F6314A3D2C700F096AC /* BoneBoneCopyMap.cpp */; };
 		7DBFA12B153852610015108E /* PuppetInterface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7DBFA12A153852610015108E /* PuppetInterface.cpp */; };
-		7DBFA12D153854090015108E /* libboost_thread-mt.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DBFA12C153854090015108E /* libboost_thread-mt.dylib */; };
 		7DCB020D143E4E1800A2FF55 /* Bone.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7DCB0203143E4E1800A2FF55 /* Bone.cpp */; };
 		7DCD6DBC182E3FC30009030C /* libmosek64.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DCD6DBB182E3FC30009030C /* libmosek64.dylib */; };
 		7DD1648A18E5D7FF00F84CA9 /* libigl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DD1648618E5D7FF00F84CA9 /* libigl.a */; };
@@ -60,7 +58,6 @@
 		7DD1648D18E5D7FF00F84CA9 /* libigltetgen.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DD1648918E5D7FF00F84CA9 /* libigltetgen.a */; };
 		7DD1648F18E5D80F00F84CA9 /* libAntTweakBar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DD1648E18E5D80F00F84CA9 /* libAntTweakBar.a */; };
 		7DD1649118E5D81F00F84CA9 /* libtet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DD1649018E5D81F00F84CA9 /* libtet.a */; };
-		7DD6240F1870AC5E000CBEB3 /* libiglsvd3x3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DD6240E1870AC5E000CBEB3 /* libiglsvd3x3.a */; };
 		7DD624121870AC71000CBEB3 /* Camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7DD624101870AC71000CBEB3 /* Camera.cpp */; };
 		7DEEE5E615F785F20079D39B /* puppet_angles_to_quat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7DEEE5E215F785F20079D39B /* puppet_angles_to_quat.cpp */; };
 		7DEEE5E715F785F20079D39B /* splitter_rotation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7DEEE5E415F785F20079D39B /* splitter_rotation.cpp */; };
@@ -84,7 +81,7 @@
 		7D00FE69142396EB00E9BCC5 /* SkinningCallback.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SkinningCallback.cpp; sourceTree = "<group>"; };
 		7D00FE6A142396EB00E9BCC5 /* SkinningCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkinningCallback.h; sourceTree = "<group>"; };
 		7D042AAA1486E63C00CDDE15 /* sort_weights.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sort_weights.h; sourceTree = "<group>"; };
-		7D0AEC0D1420DB02006FAF6E /* skinning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = skinning.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D0AEC0D1420DB02006FAF6E /* FAST.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FAST.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D0AEC111420DB02006FAF6E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		7D0AEC141420DB02006FAF6E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		7D0AEC151420DB02006FAF6E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -136,7 +133,6 @@
 		7D4ABE8116815B35003EFCE2 /* draw_water.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = draw_water.h; sourceTree = "<group>"; };
 		7D4ABE8216815B35003EFCE2 /* spheres_collide_with_floor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = spheres_collide_with_floor.cpp; sourceTree = "<group>"; };
 		7D4ABE8316815B35003EFCE2 /* spheres_collide_with_floor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = spheres_collide_with_floor.h; sourceTree = "<group>"; };
-		7D52449A168072A300956332 /* libgomp.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libgomp.1.dylib; path = ../../../../../../opt/local/lib/gcc47/libgomp.1.dylib; sourceTree = "<group>"; };
 		7D58BB9A172FEC2100F1329B /* calistatics.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = calistatics.icns; sourceTree = "<group>"; };
 		7D5E1FAB166F5AEC00920617 /* directionalperpixel.frag */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = directionalperpixel.frag; path = skinning/GLSL/directionalperpixel.frag; sourceTree = "<group>"; };
 		7D5E1FAC166F5AEC00920617 /* directionalperpixel.vert */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = directionalperpixel.vert; path = skinning/GLSL/directionalperpixel.vert; sourceTree = "<group>"; };
@@ -165,7 +161,6 @@
 		7DBB437D14420548001C08B6 /* write_BF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = write_BF.h; sourceTree = "<group>"; };
 		7DBFA129153852610015108E /* PuppetInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PuppetInterface.h; sourceTree = "<group>"; };
 		7DBFA12A153852610015108E /* PuppetInterface.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PuppetInterface.cpp; sourceTree = "<group>"; };
-		7DBFA12C153854090015108E /* libboost_thread-mt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libboost_thread-mt.dylib"; path = "../../../../../../opt/local/lib/libboost_thread-mt.dylib"; sourceTree = "<group>"; };
 		7DCB0203143E4E1800A2FF55 /* Bone.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Bone.cpp; sourceTree = "<group>"; };
 		7DCB0204143E4E1800A2FF55 /* Bone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bone.h; sourceTree = "<group>"; };
 		7DCB0205143E4E1800A2FF55 /* read_BF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = read_BF.h; sourceTree = "<group>"; };
@@ -185,7 +180,6 @@
 		7DD1648918E5D7FF00F84CA9 /* libigltetgen.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libigltetgen.a; path = ../../../../../../../usr/local/igl/libigl/lib/libigltetgen.a; sourceTree = "<group>"; };
 		7DD1648E18E5D80F00F84CA9 /* libAntTweakBar.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAntTweakBar.a; path = ../../../../../../../usr/local/igl/libigl/external/AntTweakBar/lib/libAntTweakBar.a; sourceTree = "<group>"; };
 		7DD1649018E5D81F00F84CA9 /* libtet.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libtet.a; path = ../../../../../../../usr/local/igl/libigl/external/tetgen/libtet.a; sourceTree = "<group>"; };
-		7DD6240E1870AC5E000CBEB3 /* libiglsvd3x3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libiglsvd3x3.a; path = ../../../../../../usr/local/igl/libigl/lib/libiglsvd3x3.a; sourceTree = "<group>"; };
 		7DD624101870AC71000CBEB3 /* Camera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Camera.cpp; path = skinning/Camera.cpp; sourceTree = "<group>"; };
 		7DD624111870AC71000CBEB3 /* Camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Camera.h; path = skinning/Camera.h; sourceTree = "<group>"; };
 		7DD6A135151CA84500588902 /* boundary_conditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = boundary_conditions.h; sourceTree = "<group>"; };
@@ -204,21 +198,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D52449B168072A300956332 /* libgomp.1.dylib in Frameworks */,
 				7D15E097142BB60C00C51A8F /* QuartzCore.framework in Frameworks */,
 				7DFD4BAA14225D1D00B29E3B /* AppKit.framework in Frameworks */,
 				7D7FC7811420FC4100CEA85D /* GLUT.framework in Frameworks */,
 				7D0AEC511420DB34006FAF6E /* OpenGL.framework in Frameworks */,
 				7D0AEC121420DB02006FAF6E /* Cocoa.framework in Frameworks */,
 				7DD1648A18E5D7FF00F84CA9 /* libigl.a in Frameworks */,
-				7DBFA12D153854090015108E /* libboost_thread-mt.dylib in Frameworks */,
 				7DD1648C18E5D7FF00F84CA9 /* libiglmosek.a in Frameworks */,
 				7DD1648B18E5D7FF00F84CA9 /* libiglbbw.a in Frameworks */,
 				7DD1649118E5D81F00F84CA9 /* libtet.a in Frameworks */,
 				7DD1648D18E5D7FF00F84CA9 /* libigltetgen.a in Frameworks */,
 				7DCD6DBC182E3FC30009030C /* libmosek64.dylib in Frameworks */,
 				7DD1648F18E5D80F00F84CA9 /* libAntTweakBar.a in Frameworks */,
-				7DD6240F1870AC5E000CBEB3 /* libiglsvd3x3.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,12 +228,10 @@
 			isa = PBXGroup;
 			children = (
 				7D58BB9A172FEC2100F1329B /* calistatics.icns */,
-				7D52449A168072A300956332 /* libgomp.1.dylib */,
 				7D5E1FAB166F5AEC00920617 /* directionalperpixel.frag */,
 				7D5E1FAC166F5AEC00920617 /* directionalperpixel.vert */,
 				7D5E1FAD166F5AEC00920617 /* directionalperpixelcolor.frag */,
 				7D5E1FAE166F5AEC00920617 /* directionalperpixelcolor.vert */,
-				7DD6240E1870AC5E000CBEB3 /* libiglsvd3x3.a */,
 				7D5E1FAF166F5AEC00920617 /* lbs.frag */,
 				7DD624101870AC71000CBEB3 /* Camera.cpp */,
 				7DD624111870AC71000CBEB3 /* Camera.h */,
@@ -257,7 +246,6 @@
 				7D5E1FB8166F5AEC00920617 /* weightcolors.vert */,
 				7D5E1FB9166F5AEC00920617 /* weights.frag */,
 				7D5E1FBA166F5AEC00920617 /* weights.vert */,
-				7DBFA12C153854090015108E /* libboost_thread-mt.dylib */,
 				7DCD6DB9182E3F8A0009030C /* libiglbbw.a */,
 				7DCD6DBB182E3FC30009030C /* libmosek64.dylib */,
 				7D1FEA581422494000574785 /* igl_lib */,
@@ -272,7 +260,7 @@
 		7D0AEC0E1420DB02006FAF6E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7D0AEC0D1420DB02006FAF6E /* skinning.app */,
+				7D0AEC0D1420DB02006FAF6E /* FAST.app */,
 				7D0AEC2E1420DB02006FAF6E /* skinningTests.octest */,
 			);
 			name = Products;
@@ -446,7 +434,7 @@
 			);
 			name = FAST;
 			productName = skinning;
-			productReference = 7D0AEC0D1420DB02006FAF6E /* skinning.app */;
+			productReference = 7D0AEC0D1420DB02006FAF6E /* FAST.app */;
 			productType = "com.apple.product-type.application";
 		};
 		7D0AEC2D1420DB02006FAF6E /* skinningTests */ = {
@@ -695,6 +683,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_CXX_LIBRARY = "libc++";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -712,8 +701,8 @@
 				GCC_WARN_SHADOW = NO;
 				HEADER_SEARCH_PATHS = (
 					/usr/local/igl/libigl/include,
-					/opt/local/include/eigen3/,
-					/opt/local/include/eigen3/unsupported/,
+					/usr/local/include/eigen3/,
+					/usr/local/include/eigen3/unsupported/,
 					/usr/local/igl/libigl/external/AntTweakBar/include,
 					/usr/local/igl/libigl/external/tetgen,
 					/usr/local/igl/libigl/external/Singular_Value_Decomposition,
@@ -741,7 +730,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
-				USER_HEADER_SEARCH_PATHS = "/Users/ajx/Documents/the-puppet/api/generic/include /opt/local/include/eigen3/ /opt/local/include/eigen3/unsupported/ /Users/ajx/Documents/the-puppet /Users/ajx/Documents/the-puppet/api/unix/include /usr/local/mosek/7/tools/platform/osx64x86/h";
+				USER_HEADER_SEARCH_PATHS = "/Users/ajx/Documents/the-puppet/api/generic/include /usr/local/include/eigen3/ /usr/local/include/eigen3/unsupported/ /Users/ajx/Documents/the-puppet /Users/ajx/Documents/the-puppet/api/unix/include /usr/local/mosek/7/tools/platform/osx64x86/h";
 				WARNING_CFLAGS = "";
 				WRAPPER_EXTENSION = app;
 			};
@@ -751,6 +740,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_CXX_LIBRARY = "libc++";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -771,8 +761,8 @@
 				GCC_WARN_SHADOW = NO;
 				HEADER_SEARCH_PATHS = (
 					/usr/local/igl/libigl/include,
-					/opt/local/include/eigen3/,
-					/opt/local/include/eigen3/unsupported/,
+					/usr/local/include/eigen3/,
+					/usr/local/include/eigen3/unsupported/,
 					/usr/local/igl/libigl/external/AntTweakBar/include,
 					/usr/local/igl/libigl/external/tetgen,
 					/usr/local/igl/libigl/external/Singular_Value_Decomposition,
@@ -800,7 +790,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
-				USER_HEADER_SEARCH_PATHS = "/Users/ajx/Documents/the-puppet/api/generic/include /opt/local/include/eigen3/ /opt/local/include/eigen3/unsupported/ /Users/ajx/Documents/the-puppet /Users/ajx/Documents/the-puppet/api/unix/include /usr/local/mosek/7/tools/platform/osx64x86/h";
+				USER_HEADER_SEARCH_PATHS = "/Users/ajx/Documents/the-puppet/api/generic/include /usr/local/include/eigen3/ /usr/local/include/eigen3/unsupported/ /Users/ajx/Documents/the-puppet /Users/ajx/Documents/the-puppet/api/unix/include /usr/local/mosek/7/tools/platform/osx64x86/h";
 				WARNING_CFLAGS = "";
 				"WARNING_CFLAGS[arch=*]" = "-Wno-unused";
 				WRAPPER_EXTENSION = app;
