@@ -17,8 +17,8 @@ renaming.
 
 ### Dependencies ###
 - Eigen3 (matrix library)
-- libigl (IGL's header library)
--   AntTweakBar (OpenGL GUI toolkit)
+- libigl (IGL's header library) (last tested with commit 2d1860a)
+- AntTweakBar (OpenGL GUI toolkit)
 - OpenGL (realtime rendering)
 - Cocoa (UI on Mac OS X)
 - GLUT (extra openGL utilities: displaying text, UI on everything else)
