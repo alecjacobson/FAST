@@ -38,3 +38,7 @@ scripts/change_name.sh
 *.out
 *.app
 skinning/skinning
+Build/
+DerivedData/
+*.swo
+*.swp
