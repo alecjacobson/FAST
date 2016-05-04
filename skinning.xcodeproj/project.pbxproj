@@ -59,6 +59,8 @@
 		7DD1648D18E5D7FF00F84CA9 /* libigltetgen.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DD1648918E5D7FF00F84CA9 /* libigltetgen.a */; };
 		7DD1648F18E5D80F00F84CA9 /* libAntTweakBar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DD1648E18E5D80F00F84CA9 /* libAntTweakBar.a */; };
 		7DD624121870AC71000CBEB3 /* Camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7DD624101870AC71000CBEB3 /* Camera.cpp */; };
+		7DDE5D6E1CDAA02500094E08 /* lbsTextured.frag in Resources */ = {isa = PBXBuildFile; fileRef = 7DDE5D6C1CDAA02500094E08 /* lbsTextured.frag */; };
+		7DDE5D6F1CDAA02500094E08 /* lbsTextured.vert in Resources */ = {isa = PBXBuildFile; fileRef = 7DDE5D6D1CDAA02500094E08 /* lbsTextured.vert */; };
 		7DEEE5E615F785F20079D39B /* puppet_angles_to_quat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7DEEE5E215F785F20079D39B /* puppet_angles_to_quat.cpp */; };
 		7DEEE5E715F785F20079D39B /* splitter_rotation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7DEEE5E415F785F20079D39B /* splitter_rotation.cpp */; };
 		7DFD4BAA14225D1D00B29E3B /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DFD4BA914225D1D00B29E3B /* AppKit.framework */; };
@@ -185,6 +187,10 @@
 		7DD624111870AC71000CBEB3 /* Camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Camera.h; path = skinning/Camera.h; sourceTree = "<group>"; };
 		7DD6A135151CA84500588902 /* boundary_conditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = boundary_conditions.h; sourceTree = "<group>"; };
 		7DD7F7611427860500DD35CA /* ShaderMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaderMode.h; sourceTree = "<group>"; };
+		7DDE5D6C1CDAA02500094E08 /* lbsTextured.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = lbsTextured.frag; path = skinning/GLSL/lbsTextured.frag; sourceTree = "<group>"; };
+		7DDE5D6D1CDAA02500094E08 /* lbsTextured.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = lbsTextured.vert; path = skinning/GLSL/lbsTextured.vert; sourceTree = "<group>"; };
+		7DDE5D701CDAA05700094E08 /* lbsTextured.frag */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = lbsTextured.frag; path = skinning/GLSL/lbsTextured.frag; sourceTree = "<group>"; };
+		7DDE5D711CDAA05700094E08 /* lbsTextured.vert */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = lbsTextured.vert; path = skinning/GLSL/lbsTextured.vert; sourceTree = "<group>"; };
 		7DEEE5E215F785F20079D39B /* puppet_angles_to_quat.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = puppet_angles_to_quat.cpp; sourceTree = "<group>"; };
 		7DEEE5E315F785F20079D39B /* puppet_angles_to_quat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = puppet_angles_to_quat.h; sourceTree = "<group>"; };
 		7DEEE5E415F785F20079D39B /* splitter_rotation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = splitter_rotation.cpp; sourceTree = "<group>"; };
@@ -228,6 +234,8 @@
 		7D0AEC021420DB02006FAF6E = {
 			isa = PBXGroup;
 			children = (
+				7DDE5D701CDAA05700094E08 /* lbsTextured.frag */,
+				7DDE5D711CDAA05700094E08 /* lbsTextured.vert */,
 				7D58BB9A172FEC2100F1329B /* calistatics.icns */,
 				7D5E1FAB166F5AEC00920617 /* directionalperpixel.frag */,
 				7D5E1FAC166F5AEC00920617 /* directionalperpixel.vert */,
@@ -238,6 +246,8 @@
 				7DD624111870AC71000CBEB3 /* Camera.h */,
 				7D5E1FB0166F5AEC00920617 /* lbs.vert */,
 				7D5E1FB1166F5AEC00920617 /* lbsMaterialColor.frag */,
+				7DDE5D6C1CDAA02500094E08 /* lbsTextured.frag */,
+				7DDE5D6D1CDAA02500094E08 /* lbsTextured.vert */,
 				7D5E1FB2166F5AEC00920617 /* lbsMaterialColor.vert */,
 				7D5E1FB3166F5AEC00920617 /* lbsOptimized.frag */,
 				7D5E1FB4166F5AEC00920617 /* lbsOptimized.vert */,
@@ -482,6 +492,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DDE5D6E1CDAA02500094E08 /* lbsTextured.frag in Resources */,
+				7DDE5D6F1CDAA02500094E08 /* lbsTextured.vert in Resources */,
 				7D58BB9B172FEC2100F1329B /* calistatics.icns in Resources */,
 				7D5E1FBB166F5AEC00920617 /* directionalperpixel.frag in Resources */,
 				7D5E1FBC166F5AEC00920617 /* directionalperpixel.vert in Resources */,
@@ -541,7 +553,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "source ~/.profile\necho $DYLD_FALLBACK_LIBRARY_PATH\ndylibbundler -od -b -x $CONFIGURATION_BUILD_DIR/FAST.app/Contents/MacOS/FAST -d $CONFIGURATION_BUILD_DIRFAST.app/Contents/libs/\ninstall_name_tool -change @loader_path/libmosek64.7.0.dylib  @executable_path/../libs/libmosek64.7.0.dylib  $CONFIGURATION_BUILD_DIR/FAST.app/Contents/MacOS/FAST\n\n";
+			shellScript = "source ~/.profile\necho $DYLD_FALLBACK_LIBRARY_PATH\ndylibbundler -od -b -x $CONFIGURATION_BUILD_DIR/FAST.app/Contents/MacOS/FAST -d $CONFIGURATION_BUILD_DIR/FAST.app/Contents/libs/\ninstall_name_tool -change @loader_path/libmosek64.7.0.dylib  @executable_path/../libs/libmosek64.7.0.dylib  $CONFIGURATION_BUILD_DIR/FAST.app/Contents/MacOS/FAST\n\n";
 		};
 		7DF083F1143B24CE00A84968 /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -802,6 +814,7 @@
 					/opt/local/mosek/7/tools/platform/osx64x86/bin,
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
 				USER_HEADER_SEARCH_PATHS = "/Users/ajx/Documents/the-puppet/api/generic/include /usr/local/include/eigen3/ /usr/local/include/eigen3/unsupported/ /Users/ajx/Documents/the-puppet /Users/ajx/Documents/the-puppet/api/unix/include /usr/local/mosek/7/tools/platform/osx64x86/h";

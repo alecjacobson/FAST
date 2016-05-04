@@ -1,8 +1,8 @@
 
 // Forward declartion of C++ class from objective-C
 // http://lists.apple.com/archives/cocoa-dev/2008/Mar/msg01652.html
-struct Skinning;
-typedef struct Skinning Skinning;
+//struct Skinning;
+//typedef struct Skinning Skinning;
 #import <OpenGL/gl.h>
 #import <Cocoa/Cocoa.h>
 
@@ -14,6 +14,7 @@ void reportError (char * strError);
 // if error dump gl errors to debugger string, return error
 GLenum glReportError (void);
 
+struct Opaque;
 @interface BasicOpenGLView : NSOpenGLView
 {
     // TODO: add object (pointer) for your OpenGL-based app
@@ -29,7 +30,7 @@ GLenum glReportError (void);
     // only once per OpenGL session, I'm not sure how necessary this is
     bool openGL_initialized;
     bool control_down_on_down;
-    Skinning * skinning;
+    struct Opaque * opaque;
 }
 
 ///////////////////////////////////////////////////////////////////////////////

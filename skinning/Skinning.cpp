@@ -616,7 +616,7 @@ void Skinning::initialize_anttweakbar()
   add_crowd_group();
   add_puppet_group();
     
-    add_PBS_group();
+  add_PBS_group();
 }
 
 void Skinning::set_twbarvar_readonly(const char * name,const bool v)
@@ -2796,7 +2796,9 @@ void Skinning::initialize_shaders()
 #endif
   if(!success)
   {
-    /***/printf("Error: initialize_shaders() couldn't load all shaders.\n");
+    /***/printf(
+        "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n"
+        "Error: initialize_shaders() couldn't load all shaders.\n");
   }
 }
 
@@ -2925,6 +2927,7 @@ bool Skinning::load_shader_pair_from_files(
     shader_mode = LBS;
     display_list_damage = true;
   }
+  std::cout<<"  successfully loaded shader from "<<shader_file_name<<std::endl;
   return true;
 }
 

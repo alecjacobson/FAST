@@ -8,6 +8,11 @@
 #import "Skinning.h"
 #import "ShaderMode.h"
 
+struct Opaque
+{
+  Skinning skinning;
+};
+
 void reportError (char * strError)
 {
   // Set up a fancy font/display for error messages
@@ -35,6 +40,7 @@ GLenum glReportError (void)
 }
 
 @implementation BasicOpenGLView
+
 
 -(IBAction) openDocument: (id) sender
 {
@@ -71,9 +77,9 @@ GLenum glReportError (void)
     BOOL exists = [fileManager fileExistsAtPath:file_name isDirectory:&isDir];
     if (exists && isDir)
     {
-        success = skinning->load(c_file_name);
+        success = opaque->skinning.load(c_file_name);
     }else {
-        success = skinning->load_mesh_from_file(c_file_name);
+        success = opaque->skinning.load_mesh_from_file(c_file_name);
     }
   return success;
 }
@@ -106,7 +112,7 @@ GLenum glReportError (void)
     const char * file_name = [[[savePanel URL] path]  UTF8String];
     // TODO: handle saving default file
     NSLog(@"Saving file to %s", file_name);
-    skinning->save_deformed_mesh_to_file(file_name);
+    opaque->skinning.save_deformed_mesh_to_file(file_name);
   }
 }
 
@@ -132,7 +138,7 @@ GLenum glReportError (void)
     const char * file_name = [[[tvarNSOpenPanelObj URL] path] UTF8String];
     //// Pass on file name to opener helper
     //NSLog(@"openShader(): %s\n",file_name);
-    skinning->load_shader_pair_from_files(LBS,file_name);
+    opaque->skinning.load_shader_pair_from_files(LBS,file_name);
   }
 }
 
@@ -156,7 +162,7 @@ GLenum glReportError (void)
     const char * file_name = [[[tvarNSOpenPanelObj URL] path] UTF8String];
     //// Pass on file name to opener helper
     //NSLog(@"openShader(): %s\n",file_name);
-    skinning->load_weights(file_name);
+    opaque->skinning.load_weights(file_name);
   }
 }
 
@@ -180,7 +186,7 @@ GLenum glReportError (void)
     const char * file_name = [[[tvarNSOpenPanelObj URL] path] UTF8String];
     //// Pass on file name to opener helper
     //NSLog(@"openShader(): %s\n",file_name);
-    skinning->load_extra_weights(file_name);
+    opaque->skinning.load_extra_weights(file_name);
   }
 }
 
@@ -204,7 +210,7 @@ GLenum glReportError (void)
     const char * file_name = [[[tvarNSOpenPanelObj URL] path] UTF8String];
     //// Pass on file name to opener helper
     //NSLog(@"openShader(): %s\n",file_name);
-    skinning->load_bone_roots(file_name);
+    opaque->skinning.load_bone_roots(file_name);
   }
 }
 
@@ -228,7 +234,7 @@ GLenum glReportError (void)
     const char * file_name = [[[tvarNSOpenPanelObj URL] path] UTF8String];
     //// Pass on file name to opener helper
     //NSLog(@"openShader(): %s\n",file_name);
-    skinning->load_bone_roots_animation(file_name);
+    opaque->skinning.load_bone_roots_animation(file_name);
   }
 }
 
@@ -245,7 +251,7 @@ GLenum glReportError (void)
   {
     // convert cocoa string to c string
     const char * folder_name = [[[openPanel URL] path] UTF8String];
-    skinning->load(folder_name);
+    opaque->skinning.load(folder_name);
   } 
 }
 
@@ -287,7 +293,7 @@ GLenum glReportError (void)
 
       //// Pass on file name to opener helper
       //NSLog(@"openShader(): %s\n",file_name);
-      skinning->load_tgf_and_dmat_pair(tgf_file_name,dmat_file_name);
+      opaque->skinning.load_tgf_and_dmat_pair(tgf_file_name,dmat_file_name);
     }
   }
 }
@@ -312,7 +318,7 @@ GLenum glReportError (void)
     const char * file_name = [[[tvarNSOpenPanelObj URL] path] UTF8String];
     //// Pass on file name to opener helper
     //NSLog(@"openShader(): %s\n",file_name);
-    skinning->load_texture(file_name);
+    opaque->skinning.load_texture(file_name);
   }
 }
 
@@ -342,7 +348,7 @@ GLenum glReportError (void)
   {
     // convert cocoa string to c string
     const char * file_name = [[[savePanel URL] path] UTF8String];
-    skinning->save_bone_roots(file_name);
+    opaque->skinning.save_bone_roots(file_name);
   } 
 }
 
@@ -372,7 +378,7 @@ GLenum glReportError (void)
   {
     // convert cocoa string to c string
     const char * file_name = [[[savePanel URL] path] UTF8String];
-    skinning->save_extra_weights(file_name);
+    opaque->skinning.save_extra_weights(file_name);
   } 
 }
 
@@ -389,7 +395,7 @@ GLenum glReportError (void)
   {
     // convert cocoa string to c string
     const char * folder_name = [[[openPanel URL] path] UTF8String];
-    skinning->save(folder_name);
+    opaque->skinning.save(folder_name);
   } 
 }
 
@@ -419,7 +425,7 @@ GLenum glReportError (void)
   {
     // convert cocoa string to c string
     const char * file_name = [[[savePanel URL] path] UTF8String];
-    skinning->save_bone_roots_animation(file_name);
+    opaque->skinning.save_bone_roots_animation(file_name);
   } 
 }
 
@@ -437,7 +443,7 @@ GLenum glReportError (void)
     bool shift_down  = [theEvent modifierFlags] & NSShiftKeyMask;
     bool command_down  = [theEvent modifierFlags] & NSCommandKeyMask;
     bool option_down  = [theEvent modifierFlags] & NSAlternateKeyMask;
-    skinning->key_down(character,location.x,location.y,shift_down,command_down,option_down);
+    opaque->skinning.key_down(character,location.x,location.y,shift_down,command_down,option_down);
   }
   damage = true;
 }
@@ -454,7 +460,7 @@ GLenum glReportError (void)
     bool shift_down  = [theEvent modifierFlags] & NSShiftKeyMask;
     bool command_down  = [theEvent modifierFlags] & NSCommandKeyMask;
     bool option_down  = [theEvent modifierFlags] & NSAlternateKeyMask;
-    skinning->key_up(character,location.x,location.y,shift_down,command_down,option_down);
+    opaque->skinning.key_up(character,location.x,location.y,shift_down,command_down,option_down);
   }
   damage = true;
 }
@@ -470,9 +476,9 @@ GLenum glReportError (void)
   control_down_on_down  = [theEvent modifierFlags] & NSControlKeyMask;
   if(control_down_on_down)
   {
-    skinning->right_mouse_down(location.x,location.y,shift_down,command_down,option_down);
+    opaque->skinning.right_mouse_down(location.x,location.y,shift_down,command_down,option_down);
   }else{
-    skinning->mouse_down(location.x,location.y,shift_down,command_down,option_down);
+    opaque->skinning.mouse_down(location.x,location.y,shift_down,command_down,option_down);
   }
   damage = true;
 }
@@ -485,7 +491,7 @@ GLenum glReportError (void)
   bool shift_down  = [theEvent modifierFlags] & NSShiftKeyMask;
   bool command_down  = [theEvent modifierFlags] & NSCommandKeyMask;
   bool option_down  = [theEvent modifierFlags] & NSAlternateKeyMask;
-  skinning->right_mouse_down(location.x,location.y,shift_down,command_down,option_down);
+  opaque->skinning.right_mouse_down(location.x,location.y,shift_down,command_down,option_down);
 }
 
 - (void)otherMouseDown:(NSEvent *)theEvent
@@ -505,10 +511,10 @@ GLenum glReportError (void)
   bool option_down  = [theEvent modifierFlags] & NSAlternateKeyMask;
   if(control_down_on_down)
   {
-    skinning->right_mouse_up(location.x,location.y,shift_down,command_down,option_down);
+    opaque->skinning.right_mouse_up(location.x,location.y,shift_down,command_down,option_down);
   }else
   {
-    skinning->mouse_up(location.x,location.y,shift_down,command_down,option_down);
+    opaque->skinning.mouse_up(location.x,location.y,shift_down,command_down,option_down);
   }
   damage = true;
 }
@@ -521,7 +527,7 @@ GLenum glReportError (void)
   bool shift_down  = [theEvent modifierFlags] & NSShiftKeyMask;
   bool command_down  = [theEvent modifierFlags] & NSCommandKeyMask;
   bool option_down  = [theEvent modifierFlags] & NSAlternateKeyMask;
-  skinning->right_mouse_up(location.x,location.y,shift_down,command_down,option_down);
+  opaque->skinning.right_mouse_up(location.x,location.y,shift_down,command_down,option_down);
 }
 
 - (void)otherMouseUp:(NSEvent *)theEvent
@@ -538,7 +544,7 @@ GLenum glReportError (void)
   bool shift_down  = [theEvent modifierFlags] & NSShiftKeyMask;
   bool command_down  = [theEvent modifierFlags] & NSCommandKeyMask;
   bool option_down  = [theEvent modifierFlags] & NSAlternateKeyMask;
-  skinning->mouse_move(location.x,location.y,shift_down,command_down,option_down);
+  opaque->skinning.mouse_move(location.x,location.y,shift_down,command_down,option_down);
   damage = true;
 }
 
@@ -551,10 +557,10 @@ GLenum glReportError (void)
   bool option_down  = [theEvent modifierFlags] & NSAlternateKeyMask;
   if(control_down_on_down)
   {
-    skinning->right_mouse_drag(location.x,location.y,shift_down,command_down,option_down);
+    opaque->skinning.right_mouse_drag(location.x,location.y,shift_down,command_down,option_down);
   }else
   {
-    skinning->mouse_drag(location.x,location.y,shift_down,command_down,option_down);
+    opaque->skinning.mouse_drag(location.x,location.y,shift_down,command_down,option_down);
   }
   damage = true;
 }
@@ -566,7 +572,7 @@ GLenum glReportError (void)
   bool shift_down  = [theEvent modifierFlags] & NSShiftKeyMask;
   bool command_down  = [theEvent modifierFlags] & NSCommandKeyMask;
   bool option_down  = [theEvent modifierFlags] & NSAlternateKeyMask;
-  skinning->right_mouse_drag(location.x,location.y,shift_down,command_down,option_down);
+  opaque->skinning.right_mouse_drag(location.x,location.y,shift_down,command_down,option_down);
 }
 
 - (void)otherMouseDragged:(NSEvent *)theEvent
@@ -580,7 +586,7 @@ GLenum glReportError (void)
 {
   NSPoint location = 
     [self convertPoint:[theEvent locationInWindow] fromView:nil];
-  skinning->mouse_scroll(
+  opaque->skinning.mouse_scroll(
     location.x,location.y,[theEvent deltaX],[theEvent deltaY]);
   damage = true;
 }
@@ -606,10 +612,10 @@ GLenum glReportError (void)
 - (void) reshape
 {
   NSRect rectView = [self bounds];
-  if(NULL != skinning)
+  if(NULL != opaque)
   {
-    skinning->resize(rectView.size.width,rectView.size.height);
-    skinning->display();
+    opaque->skinning.resize(rectView.size.width,rectView.size.height);
+    opaque->skinning.display();
   }
 }
 
@@ -646,12 +652,11 @@ GLenum glReportError (void)
     bool stealFocus = [args boolForKey:@"stealFocus"];
     if(stealFocus)
     {
-        // Steal focus means that the apps window will appear in front of all
-        // other programs when it launches even in front of the calling
-        // application (e.g. a terminal)
-        [[NSApplication sharedApplication] activateIgnoringOtherApps:YES];
+      // Steal focus means that the apps window will appear in front of all
+      // other programs when it launches even in front of the calling
+      // application (e.g. a terminal)
+      [[NSApplication sharedApplication] activateIgnoringOtherApps:YES];
     }
-    skinning = new Skinning();
     // the OpenGL context is initialized (load textures, shaders, etc.)
     openGL_initialized = true;
   }
@@ -669,7 +674,7 @@ GLenum glReportError (void)
   if(your_app_says_to_redraw || damage)
   {
     //damage = false;
-    skinning->display();
+    opaque->skinning.display();
 //    [self drawRect:[self bounds]];
   }
 }
@@ -701,6 +706,7 @@ GLenum glReportError (void)
 
 - (void) awakeFromNib
 {
+  opaque = new Opaque();
   openGL_initialized = false;
   // keep track of start/launch time
   [self setStartTime];
@@ -715,7 +721,7 @@ GLenum glReportError (void)
 
 - (void) terminate:(NSNotification *)aNotification
 {
-  delete skinning;
+  delete opaque;
 }
 
 @end
