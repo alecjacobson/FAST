@@ -30,6 +30,8 @@ struct BoneData
   //  b = other.b;
   //  last_angles_rad = other.last_angles_rad;
   //}
+  public:
+    EIGEN_MAKE_ALIGNED_OPERATOR_NEW
 };
 
 #endif

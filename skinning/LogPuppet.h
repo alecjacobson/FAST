@@ -63,5 +63,7 @@ class LogPuppet
     void on_topology_change();
     // Update offsets of bones based on current measurements
     void update_offsets();
+  public:
+    EIGEN_MAKE_ALIGNED_OPERATOR_NEW
 };
 #endif

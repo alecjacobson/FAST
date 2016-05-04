@@ -3420,6 +3420,7 @@ bool Skinning::load_bone_roots_animation(const std::string bone_roots_file_name)
   animation.clear();
   // first load the given bone roots "central" pose
   load_bone_roots(bone_roots_file_name);
+  std::cout<<"loaded bone roots..."<<std::endl;
 
   // push current skeleton roots as animation frame
   animation.push_back(
@@ -3427,11 +3428,13 @@ bool Skinning::load_bone_roots_animation(const std::string bone_roots_file_name)
       BoneBoneCopyMap(skel->roots,false),
       animation_interp_secs,
       transition_type));
+  std::cout<<"pushed back..."<<std::endl;
 
   // determine basename and extension of file
   string dirname, basename, extension, filename;
   pathinfo(bone_roots_file_name,dirname,basename,extension,filename);
   int i = 1;
+  std::cout<<"while..."<<std::endl;
   while(true)
   {
     stringstream next_name;
@@ -3459,6 +3462,7 @@ bool Skinning::load_bone_roots_animation(const std::string bone_roots_file_name)
     }
     i++;
   }
+  std::cout<<"loaded bone roots animation..."<<std::endl;
   return true;
 }
 

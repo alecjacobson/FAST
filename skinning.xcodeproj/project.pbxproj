@@ -23,6 +23,7 @@
 		7D0AEC571420EAD4006FAF6E /* Skinning.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7D0AEC551420EAD4006FAF6E /* Skinning.cpp */; };
 		7D15E097142BB60C00C51A8F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D15E096142BB60B00C51A8F /* QuartzCore.framework */; };
 		7D195F2815209A050058AD23 /* boundary_conditions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7D195F2615209A050058AD23 /* boundary_conditions.cpp */; };
+		7D3347D51CDA3E9C009DB748 /* libtetgen.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D3347D41CDA3E9C009DB748 /* libtetgen.a */; };
 		7D3FE2CF172E6D25008636A2 /* gather_positional_constraints_system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7D3FE2CC172E6D25008636A2 /* gather_positional_constraints_system.cpp */; };
 		7D4050A71510FACA00377955 /* optimize_index_buffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7D4050A51510FACA00377955 /* optimize_index_buffer.cpp */; };
 		7D45CACA1518BC7500FD6043 /* LogPuppet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7D45CAC81518BC7500FD6043 /* LogPuppet.cpp */; };
@@ -57,7 +58,6 @@
 		7DD1648C18E5D7FF00F84CA9 /* libiglmosek.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DD1648818E5D7FF00F84CA9 /* libiglmosek.a */; };
 		7DD1648D18E5D7FF00F84CA9 /* libigltetgen.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DD1648918E5D7FF00F84CA9 /* libigltetgen.a */; };
 		7DD1648F18E5D80F00F84CA9 /* libAntTweakBar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DD1648E18E5D80F00F84CA9 /* libAntTweakBar.a */; };
-		7DD1649118E5D81F00F84CA9 /* libtet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DD1649018E5D81F00F84CA9 /* libtet.a */; };
 		7DD624121870AC71000CBEB3 /* Camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7DD624101870AC71000CBEB3 /* Camera.cpp */; };
 		7DEEE5E615F785F20079D39B /* puppet_angles_to_quat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7DEEE5E215F785F20079D39B /* puppet_angles_to_quat.cpp */; };
 		7DEEE5E715F785F20079D39B /* splitter_rotation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7DEEE5E415F785F20079D39B /* splitter_rotation.cpp */; };
@@ -109,6 +109,8 @@
 		7D195F2615209A050058AD23 /* boundary_conditions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = boundary_conditions.cpp; sourceTree = "<group>"; };
 		7D195F2715209A050058AD23 /* boundary_conditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = boundary_conditions.h; sourceTree = "<group>"; };
 		7D1FA555172ACDB20011D907 /* gather_positional_constraints_system.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gather_positional_constraints_system.cpp; sourceTree = "<group>"; };
+		7D3347D31CDA3D62009DB748 /* skinning-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "skinning-Prefix.pch"; sourceTree = "<group>"; };
+		7D3347D41CDA3E9C009DB748 /* libtetgen.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libtetgen.a; path = ../../../../../usr/local/igl/libigl/lib/libtetgen.a; sourceTree = "<group>"; };
 		7D343D9B1680970000C15EEA /* naive_collide_with_floor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = naive_collide_with_floor.cpp; sourceTree = "<group>"; };
 		7D343D9D1680970F00C15EEA /* naive_collide_with_floor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = naive_collide_with_floor.h; sourceTree = "<group>"; };
 		7D343D9E16810EC800C15EEA /* draw_water.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = draw_water.cpp; sourceTree = "<group>"; };
@@ -179,7 +181,6 @@
 		7DD1648818E5D7FF00F84CA9 /* libiglmosek.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libiglmosek.a; path = ../../../../../../../usr/local/igl/libigl/lib/libiglmosek.a; sourceTree = "<group>"; };
 		7DD1648918E5D7FF00F84CA9 /* libigltetgen.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libigltetgen.a; path = ../../../../../../../usr/local/igl/libigl/lib/libigltetgen.a; sourceTree = "<group>"; };
 		7DD1648E18E5D80F00F84CA9 /* libAntTweakBar.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAntTweakBar.a; path = ../../../../../../../usr/local/igl/libigl/external/AntTweakBar/lib/libAntTweakBar.a; sourceTree = "<group>"; };
-		7DD1649018E5D81F00F84CA9 /* libtet.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libtet.a; path = ../../../../../../../usr/local/igl/libigl/external/tetgen/libtet.a; sourceTree = "<group>"; };
 		7DD624101870AC71000CBEB3 /* Camera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Camera.cpp; path = skinning/Camera.cpp; sourceTree = "<group>"; };
 		7DD624111870AC71000CBEB3 /* Camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Camera.h; path = skinning/Camera.h; sourceTree = "<group>"; };
 		7DD6A135151CA84500588902 /* boundary_conditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = boundary_conditions.h; sourceTree = "<group>"; };
@@ -202,11 +203,11 @@
 				7DFD4BAA14225D1D00B29E3B /* AppKit.framework in Frameworks */,
 				7D7FC7811420FC4100CEA85D /* GLUT.framework in Frameworks */,
 				7D0AEC511420DB34006FAF6E /* OpenGL.framework in Frameworks */,
+				7D3347D51CDA3E9C009DB748 /* libtetgen.a in Frameworks */,
 				7D0AEC121420DB02006FAF6E /* Cocoa.framework in Frameworks */,
 				7DD1648A18E5D7FF00F84CA9 /* libigl.a in Frameworks */,
 				7DD1648C18E5D7FF00F84CA9 /* libiglmosek.a in Frameworks */,
 				7DD1648B18E5D7FF00F84CA9 /* libiglbbw.a in Frameworks */,
-				7DD1649118E5D81F00F84CA9 /* libtet.a in Frameworks */,
 				7DD1648D18E5D7FF00F84CA9 /* libigltetgen.a in Frameworks */,
 				7DCD6DBC182E3FC30009030C /* libmosek64.dylib in Frameworks */,
 				7DD1648F18E5D80F00F84CA9 /* libAntTweakBar.a in Frameworks */,
@@ -248,7 +249,6 @@
 				7D5E1FBA166F5AEC00920617 /* weights.vert */,
 				7DCD6DB9182E3F8A0009030C /* libiglbbw.a */,
 				7DCD6DBB182E3FC30009030C /* libmosek64.dylib */,
-				7D1FEA581422494000574785 /* igl_lib */,
 				7D7FC78714210F6C00CEA85D /* headers */,
 				7D0AEC171420DB02006FAF6E /* skinning */,
 				7D0AEC321420DB02006FAF6E /* skinningTests */,
@@ -300,9 +300,9 @@
 				7DD1648618E5D7FF00F84CA9 /* libigl.a */,
 				7DD1648718E5D7FF00F84CA9 /* libiglbbw.a */,
 				7DD1648818E5D7FF00F84CA9 /* libiglmosek.a */,
+				7D3347D41CDA3E9C009DB748 /* libtetgen.a */,
 				7DD1648918E5D7FF00F84CA9 /* libigltetgen.a */,
 				7DD1648E18E5D80F00F84CA9 /* libAntTweakBar.a */,
-				7DD1649018E5D81F00F84CA9 /* libtet.a */,
 				7DEEE5E215F785F20079D39B /* puppet_angles_to_quat.cpp */,
 				7D343D9B1680970000C15EEA /* naive_collide_with_floor.cpp */,
 				7D364A33187AF6E800BEFDC4 /* Camera.cpp */,
@@ -333,6 +333,7 @@
 				7DCB0208143E4E1800A2FF55 /* draw_directed_line_segment.h */,
 				7D4050A51510FACA00377955 /* optimize_index_buffer.cpp */,
 				7D4050A61510FACA00377955 /* optimize_index_buffer.h */,
+				7D3347D31CDA3D62009DB748 /* skinning-Prefix.pch */,
 				7D1FA555172ACDB20011D907 /* gather_positional_constraints_system.cpp */,
 				7D195F2615209A050058AD23 /* boundary_conditions.cpp */,
 				7D195F2715209A050058AD23 /* boundary_conditions.h */,
@@ -400,14 +401,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		7D1FEA581422494000574785 /* igl_lib */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = igl_lib;
-			path = ../../../../../../opt/local/igl/igl_lib;
-			sourceTree = "<group>";
-		};
 		7D7FC78714210F6C00CEA85D /* headers */ = {
 			isa = PBXGroup;
 			children = (
@@ -427,6 +420,7 @@
 				7D0AEC091420DB02006FAF6E /* Sources */,
 				7D0AEC0A1420DB02006FAF6E /* Frameworks */,
 				7D0AEC0B1420DB02006FAF6E /* Resources */,
+				7D84B62A1CDA550300676F32 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -536,6 +530,19 @@
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
 		};
+		7D84B62A1CDA550300676F32 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "source ~/.profile\necho $DYLD_FALLBACK_LIBRARY_PATH\ndylibbundler -od -b -x $CONFIGURATION_BUILD_DIR/FAST.app/Contents/MacOS/FAST -d $CONFIGURATION_BUILD_DIRFAST.app/Contents/libs/\ninstall_name_tool -change @loader_path/libmosek64.7.0.dylib  @executable_path/../libs/libmosek64.7.0.dylib  $CONFIGURATION_BUILD_DIR/FAST.app/Contents/MacOS/FAST\n\n";
+		};
 		7DF083F1143B24CE00A84968 /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 12;
@@ -643,7 +650,11 @@
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_PREFIX_HEADER = "skinning/skinning-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					EIGEN_DONT_ALIGN_STATICALLY,
+					DEBUG,
+				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_VERSION = "";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -665,7 +676,8 @@
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 3;
-				GCC_PREPROCESSOR_DEFINITIONS = "";
+				GCC_PREFIX_HEADER = "skinning/skinning-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = EIGEN_DONT_ALIGN_STATICALLY;
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_VERSION = "";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -689,11 +701,12 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "skinning/skinning-Prefix.pch";
 				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = (
 					NO_PUPPET,
 					STATIC_ANTTWEAKBAR,
+					EIGEN_DONT_ALIGN_STATICALLY,
 				);
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
@@ -746,7 +759,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "skinning/skinning-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = "";
 				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = (
@@ -754,6 +767,7 @@
 					NDEBUG,
 					STATIC_ANTTWEAKBAR,
 					_RELEASE,
+					EIGEN_DONT_ALIGN_STATICALLY,
 				);
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;

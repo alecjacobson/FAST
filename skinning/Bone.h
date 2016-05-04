@@ -198,6 +198,8 @@ class Bone : public Widget
     // DEBUG
     ///////////////////////////////////////////////////////////////////////////
     void print() const;
+  public:
+    EIGEN_MAKE_ALIGNED_OPERATOR_NEW
 };
 
 #endif

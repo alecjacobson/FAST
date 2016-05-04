@@ -22,6 +22,8 @@ struct KeyFrame
   TransitionType transition;
   KeyFrame(StateType state, double duration, TransitionType transition):
     state(state), duration(duration), transition(transition){}
+  public:
+    EIGEN_MAKE_ALIGNED_OPERATOR_NEW
 };
 
 template<class StateType>

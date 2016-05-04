@@ -44,7 +44,7 @@
   // Define this at the top to be sure that if others include tetgen.h we get the
   // library version
 #  define TETLIBRARY
-#  include <igl/tetgen/tetrahedralize.h>
+#  include <igl/copyleft/tetgen/tetrahedralize.h>
 #endif
 #ifndef NO_MOSEK
 #  include <igl/bbw/bbw.h>
@@ -848,7 +848,7 @@ void TW_CALL SkinningCallback::compute_weights(void * clientData)
   MatrixXi BF;
   cout<<"tetgen begin()"<<endl;
   int status = 
-    igl::tetgen::tetrahedralize(
+    igl::copyleft::tetgen::tetrahedralize(
       VS,skinning->F,"Ypq100",skinning->V,skinning->Tets,BF);
   cout<<"tetgen end()"<<endl;
   if(BF.rows() != skinning->F.rows())
@@ -870,7 +870,7 @@ void TW_CALL SkinningCallback::compute_weights(void * clientData)
         "************************************************************\n"
         ,__FUNCTION__);
     status =
-      igl::tetgen::tetrahedralize(
+      igl::copyleft::tetgen::tetrahedralize(
         VS,skinning->F,"q1.414",skinning->V,skinning->Tets,BF);
     assert(skinning->F.maxCoeff() < skinning->V.rows());
     if(status != 0)

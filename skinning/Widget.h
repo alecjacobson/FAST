@@ -137,7 +137,6 @@ class Widget
     virtual void draw(){
       //std::cout<<"  Drawing a normal widget..."<<std::endl;
     };
-
 };
 
 #endif

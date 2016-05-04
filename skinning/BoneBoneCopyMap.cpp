@@ -1,6 +1,7 @@
 #include "BoneBoneCopyMap.h"
 #include "gather_bones.h"
 #include "Bone.h"
+#include <iostream>
 
 BoneBoneCopyMap::BoneBoneCopyMap(std::vector<Bone*> BR, bool rest)
 {
@@ -15,5 +16,6 @@ BoneBoneCopyMap::BoneBoneCopyMap(std::vector<Bone*> BR, bool rest)
       this->find(*bit)->second.reset();
     }
   }
+  std::cout<<"BoneBoneCopyMap constructed..."<<std::endl;
 }
 

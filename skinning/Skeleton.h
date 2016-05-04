@@ -8,6 +8,7 @@
 // tree designated by its respective root
 #include "ViewVector.h"
 #include "Widget.h"
+#include <Eigen/Core>
 
 template <typename BoneType>
 class Skeleton : public Widget
@@ -90,5 +91,7 @@ class Skeleton : public Widget
     bool set_editing(const bool v);
     bool get_editing() const;
     void print() const;
+  public:
+    EIGEN_MAKE_ALIGNED_OPERATOR_NEW
 };
 #endif

@@ -7,7 +7,7 @@ LIB=${ANT_LIB} ${PUPPET_LIB} ${TETGEN_LIB} ${MOSEK_LIB} ${OPENGL_LIB} ${GLUT_LIB
 .PHONY: all
 all: skinning
 
-PBS_KAAN=defined
+#PBS_KAAN=defined
 
 CPP_FILES=$(wildcard ./*.cpp)
 ifdef PBS_KAAN
