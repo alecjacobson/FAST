@@ -1,3 +1,8 @@
+To get started:
+
+    git clone --recursive https://github.com/alecjacobson/FAST.git
+
+
 # FAST
 --------
 Copyright Alec Jacobson 2015
