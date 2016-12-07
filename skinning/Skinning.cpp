@@ -594,7 +594,7 @@ void Skinning::initialize_anttweakbar()
   TwInit(TW_OPENGL, NULL);
   // make new reanttweakbar
   rebar = new ReTwBar();
-#ifdef _RELEASE
+#ifdef NDEBUG
   rebar->TwNewBar("bar");
   TwDefine("bar label='Release' size='200 550' text=light alpha='200' color='10 10 10'");
   rebar->TwGetParam(NULL, "color", TW_PARAM_INT32, 3, old_bar_color);
@@ -2061,7 +2061,7 @@ void Skinning::set_anttweakbar_colors()
   int USE_CPU_BG_COLOR[3] = {255,0,255};
   int EDIT_BONES_BG_COLOR[3] = {30,230,30};
 
-#ifdef _RELEASE
+#ifdef NDEBUG
   int RELEASE_BG_COLOR[3] = {10,10,10};
   int * bg_color = RELEASE_BG_COLOR;
 #else

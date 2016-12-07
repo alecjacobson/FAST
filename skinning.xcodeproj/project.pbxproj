@@ -14,16 +14,11 @@
 		7D0AEC221420DB02006FAF6E /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 7D0AEC201420DB02006FAF6E /* Credits.rtf */; };
 		7D0AEC251420DB02006FAF6E /* skinningAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D0AEC241420DB02006FAF6E /* skinningAppDelegate.m */; };
 		7D0AEC281420DB02006FAF6E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D0AEC261420DB02006FAF6E /* MainMenu.xib */; };
-		7D0AEC2F1420DB02006FAF6E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D0AEC111420DB02006FAF6E /* Cocoa.framework */; };
-		7D0AEC371420DB02006FAF6E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7D0AEC351420DB02006FAF6E /* InfoPlist.strings */; };
-		7D0AEC3A1420DB02006FAF6E /* skinningTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 7D0AEC391420DB02006FAF6E /* skinningTests.h */; };
-		7D0AEC3C1420DB02006FAF6E /* skinningTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D0AEC3B1420DB02006FAF6E /* skinningTests.m */; };
 		7D0AEC511420DB34006FAF6E /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D0AEC501420DB34006FAF6E /* OpenGL.framework */; };
 		7D0AEC541420E006006FAF6E /* BasicOpenGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7D0AEC531420E006006FAF6E /* BasicOpenGLView.mm */; };
 		7D0AEC571420EAD4006FAF6E /* Skinning.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7D0AEC551420EAD4006FAF6E /* Skinning.cpp */; };
 		7D15E097142BB60C00C51A8F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D15E096142BB60B00C51A8F /* QuartzCore.framework */; };
 		7D195F2815209A050058AD23 /* boundary_conditions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7D195F2615209A050058AD23 /* boundary_conditions.cpp */; };
-		7D3347D51CDA3E9C009DB748 /* libtetgen.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D3347D41CDA3E9C009DB748 /* libtetgen.a */; };
 		7D3FE2CF172E6D25008636A2 /* gather_positional_constraints_system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7D3FE2CC172E6D25008636A2 /* gather_positional_constraints_system.cpp */; };
 		7D4050A71510FACA00377955 /* optimize_index_buffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7D4050A51510FACA00377955 /* optimize_index_buffer.cpp */; };
 		7D45CACA1518BC7500FD6043 /* LogPuppet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7D45CAC81518BC7500FD6043 /* LogPuppet.cpp */; };
@@ -50,14 +45,10 @@
 		7D6B485516815AAB00BB4AE5 /* naive_collide_with_floor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7D6B485316815AAB00BB4AE5 /* naive_collide_with_floor.cpp */; };
 		7D7FC7811420FC4100CEA85D /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D7FC7801420FC4100CEA85D /* GLUT.framework */; };
 		7D8C3F6414A3D2C700F096AC /* BoneBoneCopyMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7D8C3F6314A3D2C700F096AC /* BoneBoneCopyMap.cpp */; };
+		7DA13AC71DF8546100ADD6A5 /* libAntTweakBar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DA13AC61DF8546100ADD6A5 /* libAntTweakBar.a */; };
+		7DA13AC91DF854AC00ADD6A5 /* libtet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DA13AC81DF854AC00ADD6A5 /* libtet.a */; };
 		7DBFA12B153852610015108E /* PuppetInterface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7DBFA12A153852610015108E /* PuppetInterface.cpp */; };
 		7DCB020D143E4E1800A2FF55 /* Bone.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7DCB0203143E4E1800A2FF55 /* Bone.cpp */; };
-		7DCD6DBC182E3FC30009030C /* libmosek64.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DCD6DBB182E3FC30009030C /* libmosek64.dylib */; };
-		7DD1648A18E5D7FF00F84CA9 /* libigl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DD1648618E5D7FF00F84CA9 /* libigl.a */; };
-		7DD1648B18E5D7FF00F84CA9 /* libiglbbw.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DD1648718E5D7FF00F84CA9 /* libiglbbw.a */; };
-		7DD1648C18E5D7FF00F84CA9 /* libiglmosek.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DD1648818E5D7FF00F84CA9 /* libiglmosek.a */; };
-		7DD1648D18E5D7FF00F84CA9 /* libigltetgen.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DD1648918E5D7FF00F84CA9 /* libigltetgen.a */; };
-		7DD1648F18E5D80F00F84CA9 /* libAntTweakBar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DD1648E18E5D80F00F84CA9 /* libAntTweakBar.a */; };
 		7DD624121870AC71000CBEB3 /* Camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7DD624101870AC71000CBEB3 /* Camera.cpp */; };
 		7DDE5D6E1CDAA02500094E08 /* lbsTextured.frag in Resources */ = {isa = PBXBuildFile; fileRef = 7DDE5D6C1CDAA02500094E08 /* lbsTextured.frag */; };
 		7DDE5D6F1CDAA02500094E08 /* lbsTextured.vert in Resources */ = {isa = PBXBuildFile; fileRef = 7DDE5D6D1CDAA02500094E08 /* lbsTextured.vert */; };
@@ -68,16 +59,6 @@
 		949C9216167E82CF006B14E2 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		94ABE27D167E8DDB00A89CFA /* (null) in Sources */ = {isa = PBXBuildFile; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		7D0AEC301420DB02006FAF6E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7D0AEC041420DB02006FAF6E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7D0AEC0C1420DB02006FAF6E;
-			remoteInfo = skinning;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		7D00FE69142396EB00E9BCC5 /* SkinningCallback.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SkinningCallback.cpp; sourceTree = "<group>"; };
@@ -96,7 +77,6 @@
 		7D0AEC231420DB02006FAF6E /* skinningAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = skinningAppDelegate.h; sourceTree = "<group>"; };
 		7D0AEC241420DB02006FAF6E /* skinningAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = skinningAppDelegate.m; sourceTree = "<group>"; };
 		7D0AEC271420DB02006FAF6E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		7D0AEC2E1420DB02006FAF6E /* skinningTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = skinningTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D0AEC341420DB02006FAF6E /* skinningTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "skinningTests-Info.plist"; sourceTree = "<group>"; };
 		7D0AEC361420DB02006FAF6E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7D0AEC381420DB02006FAF6E /* skinningTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "skinningTests-Prefix.pch"; sourceTree = "<group>"; };
@@ -162,6 +142,8 @@
 		7D8C3F6314A3D2C700F096AC /* BoneBoneCopyMap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BoneBoneCopyMap.cpp; sourceTree = "<group>"; };
 		7D958F31148FB20B005F9C56 /* gather_positional_constraints_rhs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gather_positional_constraints_rhs.h; sourceTree = "<group>"; };
 		7D958F32148FB20B005F9C56 /* gather_positional_constraints_system.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gather_positional_constraints_system.h; sourceTree = "<group>"; };
+		7DA13AC61DF8546100ADD6A5 /* libAntTweakBar.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAntTweakBar.a; path = libigl/external/AntTweakBar/lib/libAntTweakBar.a; sourceTree = "<group>"; };
+		7DA13AC81DF854AC00ADD6A5 /* libtet.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libtet.a; path = libigl/external/tetgen/libtet.a; sourceTree = "<group>"; };
 		7DBB437D14420548001C08B6 /* write_BF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = write_BF.h; sourceTree = "<group>"; };
 		7DBFA129153852610015108E /* PuppetInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PuppetInterface.h; sourceTree = "<group>"; };
 		7DBFA12A153852610015108E /* PuppetInterface.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PuppetInterface.cpp; sourceTree = "<group>"; };
@@ -176,7 +158,6 @@
 		7DCB020C143E4E1800A2FF55 /* Vec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vec.h; sourceTree = "<group>"; };
 		7DCD5E67149E4E2E006DC8EE /* MKLEigenInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKLEigenInterface.h; sourceTree = "<group>"; };
 		7DCD5E6D149E4E2E006DC8EE /* theDarkSideOfEigen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = theDarkSideOfEigen.h; sourceTree = "<group>"; };
-		7DCD6DB9182E3F8A0009030C /* libiglbbw.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libiglbbw.a; path = ../../../../../../usr/local/igl/libigl/lib/libiglbbw.a; sourceTree = "<group>"; };
 		7DCD6DBB182E3FC30009030C /* libmosek64.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libmosek64.dylib; path = ../../../../../../usr/local/mosek/7/tools/platform/osx64x86/bin/libmosek64.dylib; sourceTree = "<group>"; };
 		7DD1648618E5D7FF00F84CA9 /* libigl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libigl.a; path = ../../../../../../../usr/local/igl/libigl/lib/libigl.a; sourceTree = "<group>"; };
 		7DD1648718E5D7FF00F84CA9 /* libiglbbw.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libiglbbw.a; path = ../../../../../../../usr/local/igl/libigl/lib/libiglbbw.a; sourceTree = "<group>"; };
@@ -209,22 +190,9 @@
 				7DFD4BAA14225D1D00B29E3B /* AppKit.framework in Frameworks */,
 				7D7FC7811420FC4100CEA85D /* GLUT.framework in Frameworks */,
 				7D0AEC511420DB34006FAF6E /* OpenGL.framework in Frameworks */,
-				7D3347D51CDA3E9C009DB748 /* libtetgen.a in Frameworks */,
+				7DA13AC71DF8546100ADD6A5 /* libAntTweakBar.a in Frameworks */,
+				7DA13AC91DF854AC00ADD6A5 /* libtet.a in Frameworks */,
 				7D0AEC121420DB02006FAF6E /* Cocoa.framework in Frameworks */,
-				7DD1648A18E5D7FF00F84CA9 /* libigl.a in Frameworks */,
-				7DD1648C18E5D7FF00F84CA9 /* libiglmosek.a in Frameworks */,
-				7DD1648B18E5D7FF00F84CA9 /* libiglbbw.a in Frameworks */,
-				7DD1648D18E5D7FF00F84CA9 /* libigltetgen.a in Frameworks */,
-				7DCD6DBC182E3FC30009030C /* libmosek64.dylib in Frameworks */,
-				7DD1648F18E5D80F00F84CA9 /* libAntTweakBar.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7D0AEC2A1420DB02006FAF6E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7D0AEC2F1420DB02006FAF6E /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,8 +225,9 @@
 				7D5E1FB8166F5AEC00920617 /* weightcolors.vert */,
 				7D5E1FB9166F5AEC00920617 /* weights.frag */,
 				7D5E1FBA166F5AEC00920617 /* weights.vert */,
-				7DCD6DB9182E3F8A0009030C /* libiglbbw.a */,
 				7DCD6DBB182E3FC30009030C /* libmosek64.dylib */,
+				7DA13AC81DF854AC00ADD6A5 /* libtet.a */,
+				7DA13AC61DF8546100ADD6A5 /* libAntTweakBar.a */,
 				7D7FC78714210F6C00CEA85D /* headers */,
 				7D0AEC171420DB02006FAF6E /* skinning */,
 				7D0AEC321420DB02006FAF6E /* skinningTests */,
@@ -271,7 +240,6 @@
 			isa = PBXGroup;
 			children = (
 				7D0AEC0D1420DB02006FAF6E /* FAST.app */,
-				7D0AEC2E1420DB02006FAF6E /* skinningTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -441,25 +409,6 @@
 			productReference = 7D0AEC0D1420DB02006FAF6E /* FAST.app */;
 			productType = "com.apple.product-type.application";
 		};
-		7D0AEC2D1420DB02006FAF6E /* skinningTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7D0AEC421420DB02006FAF6E /* Build configuration list for PBXNativeTarget "skinningTests" */;
-			buildPhases = (
-				7D0AEC291420DB02006FAF6E /* Sources */,
-				7D0AEC2A1420DB02006FAF6E /* Frameworks */,
-				7D0AEC2B1420DB02006FAF6E /* Resources */,
-				7D0AEC2C1420DB02006FAF6E /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7D0AEC311420DB02006FAF6E /* PBXTargetDependency */,
-			);
-			name = skinningTests;
-			productName = skinningTests;
-			productReference = 7D0AEC2E1420DB02006FAF6E /* skinningTests.octest */;
-			productType = "com.apple.product-type.bundle.ocunit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -482,7 +431,6 @@
 			projectRoot = "";
 			targets = (
 				7D0AEC0C1420DB02006FAF6E /* FAST */,
-				7D0AEC2D1420DB02006FAF6E /* skinningTests */,
 			);
 		};
 /* End PBXProject section */
@@ -517,31 +465,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7D0AEC2B1420DB02006FAF6E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7D0AEC371420DB02006FAF6E /* InfoPlist.strings in Resources */,
-				7D0AEC3A1420DB02006FAF6E /* skinningTests.h in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		7D0AEC2C1420DB02006FAF6E /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
 		7D84B62A1CDA550300676F32 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -601,23 +527,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7D0AEC291420DB02006FAF6E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7D0AEC3C1420DB02006FAF6E /* skinningTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		7D0AEC311420DB02006FAF6E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7D0AEC0C1420DB02006FAF6E /* FAST */;
-			targetProxy = 7D0AEC301420DB02006FAF6E /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		7D0AEC1A1420DB02006FAF6E /* InfoPlist.strings */ = {
@@ -663,10 +573,7 @@
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREFIX_HEADER = "skinning/skinning-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					EIGEN_DONT_ALIGN_STATICALLY,
-					DEBUG,
-				);
+				GCC_PREPROCESSOR_DEFINITIONS = "";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_VERSION = "";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -677,7 +584,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
-				USER_HEADER_SEARCH_PATHS = "/usr/local/igl/libigl/include /usr/local/igl/libigl/external/Singular_Value_Decomposition";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
 		};
@@ -689,7 +596,7 @@
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_PREFIX_HEADER = "skinning/skinning-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = EIGEN_DONT_ALIGN_STATICALLY;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_VERSION = "";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -699,7 +606,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				SDKROOT = macosx;
-				USER_HEADER_SEARCH_PATHS = "/usr/local/igl/libigl/include /usr/local/igl/libigl/external/Singular_Value_Decomposition";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Release;
 		};
@@ -715,7 +622,8 @@
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "skinning/skinning-Prefix.pch";
-				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = (
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					IGL_NO_MOSEK,
 					NO_PUPPET,
 					STATIC_ANTTWEAKBAR,
 					EIGEN_DONT_ALIGN_STATICALLY,
@@ -725,37 +633,29 @@
 				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = NO;
 				GCC_WARN_SHADOW = NO;
 				HEADER_SEARCH_PATHS = (
-					/usr/local/igl/libigl/include,
-					/usr/local/include/eigen3/,
-					/usr/local/include/eigen3/unsupported/,
-					/usr/local/igl/libigl/external/AntTweakBar/include,
-					/usr/local/igl/libigl/external/tetgen,
-					/usr/local/igl/libigl/external/Singular_Value_Decomposition,
+					"\"$(SRCROOT)/libigl/include/\"",
+					"\"$(SRCROOT)/libigl/external/nanogui/ext/eigen/\"",
+					"\"$(SRCROOT)/libigl/external/AntTweakBar/include\"",
+					"\"$(SRCROOT)/libigl/external/tetgen/\"",
 				);
 				INFOPLIST_FILE = "skinning/skinning-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"\"$(SRCROOT)/../../../the-puppet/api/unix/lib\"",
 					"$(inherited)",
 					/opt/local/lib,
-					/usr/local/igl/igl_lib/lib,
 					"\"$(SRCROOT)/../../../the-puppet/api/generic\"",
-					/usr/local/igl/igl_lib/external/tetgen,
-					/usr/local/igl/igl_lib/external/AntTweakbar/lib,
 					"\"$(SRCROOT)/../../../the-puppet/api/generic/lib\"",
-					/usr/local/igl/igl_lib/external/AntTweakBar/lib,
 					/opt/local/lib/gcc47,
-					/usr/local/igl/libigl/lib,
 					/usr/local/mosek/7/tools/platform/osx64x86/bin,
-					/usr/local/igl/libigl/external/AntTweakBar/lib,
-					/usr/local/igl/libigl/external/tetgen,
 					"\"$(SDKROOT)/usr/local/lib/gcc47\"",
-					/opt/local/igl/libigl/lib,
 					/opt/local/mosek/7/tools/platform/osx64x86/bin,
+					"$(PROJECT_DIR)/libigl/external/AntTweakBar/lib",
+					"$(PROJECT_DIR)/libigl/external/tetgen",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
-				USER_HEADER_SEARCH_PATHS = "/Users/ajx/Documents/the-puppet/api/generic/include /usr/local/include/eigen3/ /usr/local/include/eigen3/unsupported/ /Users/ajx/Documents/the-puppet /Users/ajx/Documents/the-puppet/api/unix/include /usr/local/mosek/7/tools/platform/osx64x86/h";
+				USER_HEADER_SEARCH_PATHS = "/Users/ajx/Documents/the-puppet/api/generic/include /Users/ajx/Documents/the-puppet /Users/ajx/Documents/the-puppet/api/unix/include /usr/local/mosek/7/tools/platform/osx64x86/h";
 				WARNING_CFLAGS = "";
 				WRAPPER_EXTENSION = app;
 			};
@@ -773,12 +673,10 @@
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "skinning/skinning-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = "";
-				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = (
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					IGL_NO_MOSEK,
 					NO_PUPPET,
-					NDEBUG,
 					STATIC_ANTTWEAKBAR,
-					_RELEASE,
 					EIGEN_DONT_ALIGN_STATICALLY,
 				);
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -786,97 +684,33 @@
 				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = NO;
 				GCC_WARN_SHADOW = NO;
 				HEADER_SEARCH_PATHS = (
-					/usr/local/igl/libigl/include,
-					/usr/local/include/eigen3/,
-					/usr/local/include/eigen3/unsupported/,
-					/usr/local/igl/libigl/external/AntTweakBar/include,
-					/usr/local/igl/libigl/external/tetgen,
-					/usr/local/igl/libigl/external/Singular_Value_Decomposition,
+					"\"$(SRCROOT)/libigl/include/\"",
+					"\"$(SRCROOT)/libigl/external/nanogui/ext/eigen/\"",
+					"\"$(SRCROOT)/libigl/external/AntTweakBar/include\"",
+					"\"$(SRCROOT)/libigl/external/tetgen/\"",
 				);
 				INFOPLIST_FILE = "skinning/skinning-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"\"$(SRCROOT)/../../../the-puppet/api/unix/lib\"",
 					"$(inherited)",
 					/opt/local/lib,
-					/usr/local/igl/igl_lib/lib,
 					"\"$(SRCROOT)/../../../the-puppet/api/generic\"",
-					/usr/local/igl/igl_lib/external/tetgen,
-					/usr/local/igl/igl_lib/external/AntTweakbar/lib,
 					"\"$(SRCROOT)/../../../the-puppet/api/generic/lib\"",
-					/usr/local/igl/igl_lib/external/AntTweakBar/lib,
 					/opt/local/lib/gcc47,
-					/usr/local/igl/libigl/lib,
 					/usr/local/mosek/7/tools/platform/osx64x86/bin,
-					/usr/local/igl/libigl/external/AntTweakBar/lib,
-					/usr/local/igl/libigl/external/tetgen,
 					"\"$(SDKROOT)/usr/local/lib/gcc47\"",
-					/opt/local/igl/libigl/lib,
 					/opt/local/mosek/7/tools/platform/osx64x86/bin,
+					"$(PROJECT_DIR)/libigl/external/AntTweakBar/lib",
+					"$(PROJECT_DIR)/libigl/external/tetgen",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
-				USER_HEADER_SEARCH_PATHS = "/Users/ajx/Documents/the-puppet/api/generic/include /usr/local/include/eigen3/ /usr/local/include/eigen3/unsupported/ /Users/ajx/Documents/the-puppet /Users/ajx/Documents/the-puppet/api/unix/include /usr/local/mosek/7/tools/platform/osx64x86/h";
+				USER_HEADER_SEARCH_PATHS = "/Users/ajx/Documents/the-puppet/api/generic/include /Users/ajx/Documents/the-puppet /Users/ajx/Documents/the-puppet/api/unix/include /usr/local/mosek/7/tools/platform/osx64x86/h";
 				WARNING_CFLAGS = "";
 				"WARNING_CFLAGS[arch=*]" = "-Wno-unused";
 				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		7D0AEC431420DB02006FAF6E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/skinning.app/Contents/MacOS/skinning";
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = NO;
-				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "skinningTests/skinningTests-Prefix.pch";
-				INFOPLIST_FILE = "skinningTests/skinningTests-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					/usr/local/mosek/6/tools/platform/osx64x86/bin,
-					/opt/local/igl/igl_lib/external/AntTweakBar/lib,
-				);
-				OTHER_LDFLAGS = (
-					"-framework",
-					SenTestingKit,
-				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Debug;
-		};
-		7D0AEC441420DB02006FAF6E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/skinning.app/Contents/MacOS/skinning";
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "skinningTests/skinningTests-Prefix.pch";
-				INFOPLIST_FILE = "skinningTests/skinningTests-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					/usr/local/mosek/6/tools/platform/osx64x86/bin,
-					/opt/local/igl/igl_lib/external/AntTweakBar/lib,
-				);
-				OTHER_LDFLAGS = (
-					"-framework",
-					SenTestingKit,
-				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
 		};
@@ -897,15 +731,6 @@
 			buildConfigurations = (
 				7D0AEC401420DB02006FAF6E /* Debug */,
 				7D0AEC411420DB02006FAF6E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7D0AEC421420DB02006FAF6E /* Build configuration list for PBXNativeTarget "skinningTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7D0AEC431420DB02006FAF6E /* Debug */,
-				7D0AEC441420DB02006FAF6E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
