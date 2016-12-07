@@ -16,9 +16,10 @@ keep this name as a legacy to avoid the ugly refactoring required when
 renaming.
 
 ### Dependencies ###
-- Eigen3 (matrix library)
-- libigl (IGL's header library) (last tested with commit 2d1860a)
-- AntTweakBar (OpenGL GUI toolkit)
+- git submodule:
+  - libigl (IGL's header library) 
+    - Eigen3 (matrix library)
+    - AntTweakBar (OpenGL GUI toolkit)
 - OpenGL (realtime rendering)
 - Cocoa (UI on Mac OS X)
 - GLUT (extra openGL utilities: displaying text, UI on everything else)
@@ -34,27 +35,32 @@ warnings for implicitly converting 64-bit types to 32-bit types:
 
 ## Installation ##
 
-### [libigl](https://github.com/libigl/libigl/) ### 
-    
-#### Eigen3 ####
-Eigen3 is a header library for matrix math. Install on mac os x using
+## libigl
 
-    sudo port install eigen3
+libigl is included as a git submodule, so it's frozen to a commit that is known
+to be compatible with this application. Libigl contains in `libigl/external`,
+the AntTweakBar, tetgen, and eigen depedencies. Libigl and eigen are _header
+only_, thus you will only need to build libraries for AntTweakBar and Tetgen.
 
-#### AntTweakBar ####
+### AntTweakBar
+
 AntTweakBar is an OpenGL/DirectX library for simple UI. Use the version in
-`$LIBIGL/external/AntTweakBar`
+`libigl/external/AntTweakBar`. There are a variety of `Makefile.*`s in
+`libigl/external/AntTweakBar/src`. Use `Makefile.osx.igl` if you're on Mac OS
+X. E.g., 
 
-    cd $LIBIGL/external/AntTweakBar/src
-    make -f Makefile.static
+    make -C libigl/external/AntTweakBar/src -f Makefile.osx.igl
 
-Compile libigl with:
-    
-    cd $LIBIGL
-    make
 
-You may have to edit your profile in `$LIBIGL/Makefile.conf` appropriately.
+### Tetgen
 
+Tetgen is used to tetrahedralize 3D solids given a surface mesh. This is
+optional in the sense that you should be able to disable any use of it without
+disrupting the "FAST" portion of the code. Tetgen is easy to compile:
+
+
+    make -C libigl/external/tetgen tetlib
+  
 ### Compilation and Execution ###
 
 #### Linux/Unix command line ####
@@ -143,5 +149,5 @@ following:
     install_name_tool -change @loader_path/libmosek64.7.0.dylib @executable_path/../libs/libmosek64.7.0.dylib  ./FAST.app/Contents/MacOS/FAST
 
 ## Contact ##
-Please contact [Alec Jacobson](mailto:alecjacobson@gmail.com) if you have
-questions or comments.
+Please use the issues page or contact [Alec
+Jacobson](mailto:alecjacobson@gmail.com) if you have questions or comments.
