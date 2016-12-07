@@ -678,6 +678,7 @@
 					NO_PUPPET,
 					STATIC_ANTTWEAKBAR,
 					EIGEN_DONT_ALIGN_STATICALLY,
+					NDEBUG,
 				);
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
